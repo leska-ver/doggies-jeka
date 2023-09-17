@@ -1454,9 +1454,14 @@ button {
 }
 
 .zoom:hover {
-  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
-  -webkit-transform: scale(3.1, 3.1);
-  transform: scale(3.1, 3.1);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+  -webkit-transform: translate(50%, 50%) scale(3.1);
+  transform: translate(50%, 50%) scale(3.1);
+}
+
+.zoom:nth-child(4n):hover {/*Каждый четвёртый*/
+  -webkit-transform: translate(-50%, 50%) scale(3.1);
+  transform: translate(-50%, 50%) scale(3.1);
 }
 /* // Картинка в zoom-e*/
 
@@ -2381,23 +2386,4 @@ button {
 
 
 /**/
-
-
-
-
-
-
-
-/**/
-.zoom {
-  cursor: pointer;
-  -webkit-transition: all 0.85s ease;
-  transition: all 0.85s ease;
-}
-
-.zoom:hover {
-  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
-  -webkit-transform: scale(3.1, 3.1);
-  transform: scale(3.1, 3.1);
-}
 
