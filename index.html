@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shorcut icon" href="img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Для поиска в сети-->
+  <meta name="description" content="Рады видеть Вас на нашем сайте.">
+  <meta property="og:title" content="Хостел для собак">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="здесь ссылка на сайт">
+  <meta property="og:image" content="img/ogImage.jpg">
+  <meta name="keywords" content="услуги, хостел, собаки, doggies, daycare, hostel, Sample-Doggie-Daycare, logoipsum">
+  <!-- //Для поиска в сети-->
+  <title>Sample-Doggie-Daycare</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="visually-hidden">Я для семантики</h1>
+    <header class="header">
+      <div class="header__top">
+        <div class="container header__container">
+          <a class="header__top-logo" href="#">
+            <img class="header__top-logo-img" src="img/logo.svg" alt="Логотип logoipsum">
+          </a>
+          <ul class="header__top-list header__top-list_none686">
+            <li class="header__top-item">
+              <div class="header__top-icon header__top-icon_one"></div>
+              <div class="header__top-block">
+                <p class="header__top-desc desc-p">BOARDING HOURS</p>
+                <p class="header__top-desc desc-p">Mon - Sat: 7:00 am - 6:00 pm</p>
+              </div>
+            </li>
+            <li class="header__top-item">
+              <a class="header__top-icon header__top-icon_two" href="tel:+7(555)858-55-55">
+                <svg width="27" height="27" viewbox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.61 14.99 15.86 14.89 16.12 14.89C16.22 14.89 16.33 14.9 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3ZM6.54 5C6.6 5.89 6.75 6.76 6.99 7.59L5.79 8.79C5.38 7.59 5.12 6.32 5.03 5H6.54ZM16.4 17.02C17.25 17.26 18.12 17.41 19 17.47V18.96C17.68 18.87 16.41 18.61 15.2 18.21L16.4 17.02Z"
+                    fill="#f2726f"></path>
+                </svg>
+              </a>
+              <div class="header__top-block">
+                <p class="header__top-desc desc-p">
+                  CALL US
+                </p>
+                <p class="header__top-desc desc-p">
+                  (555) Pup-Cares
+                </p>
+              </div>
+            </li>
+          </ul>
+          <a class="header__top-link btn" href="#">
+            Make an Appointment
+          </a>
+        </div>
+      </div>
+      <div class="header__center">
+        <div class="container header__container">
+          <div class="header__center-content">
+            <!-- полоса поиск -->
+
+            <button id="burger" class="burger" aria-label="Меню">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="header__block-menu menu" id="menu">
+              <nav class="header__center-nav">
+                <ul class="header__center-list header__center-list_js">
+                  <!--  menu" id="menu  -->
+                  <li class="header__center-item header__center-item_js">
+                    <button class="header__center-item-btn header__center-item-btn_after header__center-item-btn_js">
+                      <span class="header__center-item-heading">Services</span>
+                    </button>
+                    <div class="header__center-dropdown header__center-dropdown_js">
+                      <ul class="header__center-dropdown-list">
+                        <li class="header__center-dropdown-item">
+                          <a class="header__center-dropdown-link" href="#">1</a>
+                        </li>
+                        <li class="header__center-dropdown-item">
+                          <a class="header__center-dropdown-link" href="#">2</a>
+                        </li>
+                        <li class="header__center-dropdown-item">
+                          <a class="header__center-dropdown-link" href="#">3</a>
+                        </li>
+                        <li class="header__center-dropdown-item">
+                          <a class="header__center-dropdown-link" href="#">4</a>
+                        </li>
+                        <li class="header__center-dropdown-item">
+                          <a class="header__center-dropdown-link" href="#">5</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header__center-item">
+                    <button class="header__center-item-btn">
+                      <span class="header__center-item-heading">Specials</span>
+                    </button>
+                  </li>
+                  <li class="header__center-item">
+                    <button class="header__center-item-btn">
+                      <span class="header__center-item-heading">Estimates</span>
+                    </button>
+                  </li>
+                  <li class="header__center-item">
+                    <button class="header__center-item-btn">
+                      <span class="header__center-item-heading">Reviews</span>
+                    </button>
+                  </li>
+                  <li class="header__center-item header__center-item_js">
+                    <button class="header__center-item-btn header__center-item-btn_after header__center-item-btn_js">
+                      <span class="header__center-item-heading">Shop</span>
+                    </button>
+                    <div class="header__center-dropdown header__center-dropdown_js">
+                      <ul class="header__center-dropdown-list">
+                        <li class="header__center-dropdown-item">
+                          <a class="header__center-dropdown-link" href="#">1</a>
+                        </li>
+                        <li class="header__center-dropdown-item">
+                          <a class="header__center-dropdown-link" href="#">2</a>
+                        </li>
+                        <li class="header__center-dropdown-item">
+                          <a class="header__center-dropdown-link" href="#">3</a>
+                        </li>
+                        <li class="header__center-dropdown-item">
+                          <a class="header__center-dropdown-link" href="#">4</a>
+                        </li>
+                        <li class="header__center-dropdown-item">
+                          <a class="header__center-dropdown-link" href="#">5</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header__center-item">
+                    <button class="header__center-item-btn">
+                      <span class="header__center-item-heading">About</span>
+                      <span class="header__center-item-icon"></span>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+
+            <!-- header__block-burger нужен ради фона на всю ширину-->
+            <!-- <div class="header__block-burger">
+          <button id="burger" class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="header__block-menu menu" id="menu">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a class="header__link" href="catalog.html" aria-label="Нажмите чтобы перейти в каталог">Каталог</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#" aria-label="Нажмите чтобы просмотреть список наших магазинов">Магазины</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#" aria-label="Нажмите чтобы войти в шоу рум">Шоу-рум</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#" aria-label="Нажмите чтобы узнать о доставке и оплате">Доставка и оплата</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#" aria-label="Нажмите чтобы узнать о дисконте">Дисконт</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="#" aria-label="Нажмите чтобы узнать наши контакты">Контакты</a>
+                </li>
+              </ul>
+              <ul class="container header__list-about-2">
+                <li class="header__item-about">
+                  <a class="header__link-about" href="#" aria-label="Нажмите чтобы узнать о компании">О компании</a>
+                </li>
+                <li class="header__item-about">
+                  <a class="header__link-about" href="#" aria-label="Нажмите чтобы узнать о гарантии и возврате">Гарантия и возврат</a>
+                </li>
+                <li class="header__item-about">
+                  <a class="header__link-about" href="#" aria-label="Нажмите чтобы узнать что мы предлагаем корпоративным клиентам">Корпоративным клиентам</a>
+                </li>
+                <li class="header__item-about">
+                  <a class="header__link-about" href="#"
+                    aria-label="Нажмите чтобы посмотреть дизайн решения">Дизайн-решение</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__elephant-svg"></div>
+          </div>
+        </div> -->
+
+
+
+            <div class="header__center-block">
+              <form class="header__center-form" action="https://jsonplaceholder.typicode.com/posts">
+                <button class="header__center-search" aria-label="Поиск">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.9649 14.255H15.7549L20.7449 19.255L19.2549 20.745L14.2549 15.755V14.965L13.9849 14.685C12.8449 15.665 11.3649 16.255 9.75488 16.255C6.16488 16.255 3.25488 13.345 3.25488 9.755C3.25488 6.165 6.16488 3.255 9.75488 3.255C13.3449 3.255 16.2549 6.165 16.2549 9.755C16.2549 11.365 15.6649 12.845 14.6849 13.985L14.9649 14.255ZM5.25488 9.755C5.25488 12.245 7.26488 14.255 9.75488 14.255C12.2449 14.255 14.2549 12.245 14.2549 9.755C14.2549 7.265 12.2449 5.255 9.75488 5.255C7.26488 5.255 5.25488 7.265 5.25488 9.755Z"
+                      fill="#4B4B4B"></path>
+                  </svg>
+                </button>
+                <input class="header__center-input" type="search" name="text" required="" minlength="2" maxlength="15">
+                <button class="header__center-close header__center-btn" aria-label="Свернуть">
+                  <span class="header__center-close-line"></span>
+                  <span class="header__center-close-line"></span>
+                </button>
+              </form>
+              <button class="header__center-basket" aria-label="Корзина">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.2963 11.97C17.9563 12.59 17.2963 13 16.5463 13H9.09634L7.99634 15H19.9963V17H7.99634C6.47634 17 5.51634 15.37 6.24634 14.03L7.59634 11.59L3.99634 4H1.99634V2H5.26634L6.20634 4H21.0063C21.7663 4 22.2463 4.82 21.8763 5.48L18.2963 11.97ZM19.3063 6H7.15634L9.52634 11H16.5463L19.3063 6ZM7.99634 18C6.89634 18 6.00634 18.9 6.00634 20C6.00634 21.1 6.89634 22 7.99634 22C9.09634 22 9.99634 21.1 9.99634 20C9.99634 18.9 9.09634 18 7.99634 18ZM16.0063 20C16.0063 18.9 16.8963 18 17.9963 18C19.0963 18 19.9963 18.9 19.9963 20C19.9963 21.1 19.0963 22 17.9963 22C16.8963 22 16.0063 21.1 16.0063 20Z"
+                    fill="#4B4B4B"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <ul class="header__center-clonList header__center-clonList_none1280">
+            <li class="header__center-clonItem">
+              <div class="header__center-clonIcon header__center-clonIcon_one"></div>
+              <div class="header__center-clonBlock">
+                <p class="header__center-clonDesc desc-p">
+                  SERVICE HOURS
+                </p>
+                <p class="header__center-clonDesc desc-p">
+                  Mon - Sat: 7:00 am - 6:00 pm
+                </p>
+              </div>
+            </li>
+            <li class="header__center-clonItem">
+              <a class="header__center-clonIcon header__center-clonIcon_two" href="tel:8(800)000-00-00">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.61 14.99 15.86 14.89 16.12 14.89C16.22 14.89 16.33 14.9 16.43 14.94C17.55 15.31 18.76 15.51 20 15.51C20.55 15.51 21 15.96 21 16.51V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3ZM6.54 5C6.6 5.89 6.75 6.76 6.99 7.59L5.79 8.79C5.38 7.59 5.12 6.32 5.03 5H6.54ZM16.4 17.02C17.25 17.26 18.12 17.41 19 17.47V18.96C17.68 18.87 16.41 18.61 15.2 18.21L16.4 17.02Z"
+                    fill="#f2726f"></path>
+                </svg>
+              </a>
+              <div class="header__center-clonBlock">
+                <p class="header__center-clonDesc desc-p">
+                  CALL US
+                </p>
+                <p class="header__center-clonDesc desc-p">
+                  (555) Car-Repair
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <h2 class="header__bottom-title h2">Premier dog boarding, daycare & day spa</h2>
+          <a class="header__bottom-button btn" href="#">
+            Make an Appointment
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="whoweare">
+        <div class="container whoweare__container">
+          <div class="whoweare__subtitle subtitle">
+            Who we are
+          </div>
+          <h3 class="whoweare__title h3">Nemo enim ipsam voluptatem quia voluptas in proident</h3>
+          <div class="whoweare__text">
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+            ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+            molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+          </div>
+          <div class="whoweare__image">
+            <img src="img/whoweare-dog.jpg" alt="image">
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__top">
+          <div class="container about__top-container">
+            <div class="about__top-subtitle subtitle">
+              OUR PROMISE TO YOU
+            </div>
+            <h3 class="about__top-h3 h3">Sed perspiciatis omnis iste natus</h3>
+            <ul class="about__top-list row">
+              <li class="about__top-item col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__top-block">
+                  <div class="about__top-img about__top-img_1">
+                    <img src="img/icons-love/01.png" alt="">
+                  </div>
+                  <div class="about__top-info">
+                    <h4 class="about__top-h4 h4">24/7 Love & Care</h4>
+                    <p class="about__top-desc desc-p">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti
+                      quos dolores et quas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="about__top-item col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__top-block">
+                  <div class="about__top-img about__top-img_2">
+                    <img src="img/icons-love/02.png" alt="">
+                  </div>
+                  <div class="about__top-">
+                    <h4 class="about__top-h4 h4">On-site Veterinarian</h4>
+                    <p class="about__top-desc desc-p">
+                      Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                      tempora incidunt.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="about__top-item col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__top-block">
+                  <div class="about__top-img about__top-img_3">
+                    <img src="img/icons-love/03.png" alt="">
+                  </div>
+                  <div class="about__top-">
+                    <h4 class="about__top-h4 h4">Live-stream Cameras</h4>
+                    <p class="about__top-desc desc-p">
+                      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                      consequatur illum.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__center">
+          <div class="container about__center-container">
+            <!-- Блок на лево -->
+            <div class="about__center-naLeft">
+              <h3 class="about__center-title h3">Nemo enim ipsam voluptatem quia voluptas in proident</h3>
+              <a class="about__center-link btn" href="#">
+                Make an Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about__bottom">
+          <div class="container about__bottom-container">
+            <div class="about__bottom-subtitle subtitle">
+              Our Services
+            </div>
+            <h3 class="about__bottom-h3 h3">Sed perspiciatis omnis iste natus</h3>
+            <ul class="about__bottom-list row about__bottom-list_js">
+              <li class="about__bottom-item about__bottom-item_js col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__bottom-block">
+                  <div class="about__bottom-img about__bottom-img_one"></div>
+                  <div class="about__bottom-info">
+                    <h4 class="about__bottom-h4 h4">Pet Boarding (No Cages)</h4>
+                    <p class="about__bottom-desc desc-p">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti
+                      quos dolores et quas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="about__bottom-item about__bottom-item_js about__bottom-item_js--active col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__bottom-block">
+                  <div class="about__bottom-img about__bottom-img_two"></div>
+                  <div class="about__bottom-info">
+                    <h4 class="about__bottom-h4 h4">Pet Daycare</h4>
+                    <p class="about__bottom-desc desc-p">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti
+                      quos dolores et quas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="about__bottom-item about__bottom-item_js col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__bottom-block">
+                  <div class="about__bottom-img about__bottom-img_tfree"></div>
+                  <div class="about__bottom-info">
+                    <h4 class="about__bottom-h4 h4">Pet Day Spa & Grooming</h4>
+                    <p class="about__bottom-desc desc-p">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti
+                      quos dolores et quas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="about__bottom-item about__bottom-item_js col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__bottom-block">
+                  <div class="about__bottom-img about__bottom-img_four"></div>
+                  <div class="about__bottom-info">
+                    <h4 class="about__bottom-h4 h4">Custom Meal Plans</h4>
+                    <p class="about__bottom-desc desc-p">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti
+                      quos dolores et quas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="about__bottom-item about__bottom-item_js col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__bottom-block">
+                  <div class="about__bottom-img about__bottom-img_fine"></div>
+                  <div class="about__bottom-info">
+                    <h4 class="about__bottom-h4 h4">Pet Training</h4>
+                    <p class="about__bottom-desc desc-p">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti
+                      quos dolores et quas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="about__bottom-item about__bottom-item_js col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__bottom-block">
+                  <div class="about__bottom-img about__bottom-img_six"></div>
+                  <div class="about__bottom-info">
+                    <h4 class="about__bottom-h4 h4">Shop Our Store!</h4>
+                    <p class="about__bottom-desc desc-p">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti
+                      quos dolores et quas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="about__bottom-item about__bottom-item_js col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__bottom-block">
+                  <div class="about__bottom-img about__bottom-img_seven"></div>
+                  <div class="about__bottom-info">
+                    <h4 class="about__bottom-h4 h4">Custom Meal Plans</h4>
+                    <p class="about__bottom-desc desc-p">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti
+                      quos dolores et quas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="about__bottom-item about__bottom-item_js col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__bottom-block">
+                  <div class="about__bottom-img about__bottom-img_eight"></div>
+                  <div class="about__bottom-info">
+                    <h4 class="about__bottom-h4 h4">Pet Training</h4>
+                    <p class="about__bottom-desc desc-p">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti
+                      quos dolores et quas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="about__bottom-item about__bottom-item_js col-xl-4 col-lg-4 col-sm-6 col-12">
+                <div class="about__bottom-block">
+                  <div class="about__bottom-img about__bottom-img_nine"></div>
+                  <div class="about__bottom-info">
+                    <h4 class="about__bottom-h4 h4">Shop Our Store!</h4>
+                    <p class="about__bottom-desc desc-p">
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti
+                      quos dolores et quas.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="about__bottom-btn btn about__bottom-btn_moreJs" type="button">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="recording">
+        <div class="container recording__container">
+          <div class="recording__left">
+            <h3 class="recording__h3 h3">Make an appointment</h3>
+            <div class="recording__form">
+              <form class="recording__form recording__form_js" action="mail.php" enctype="multipart/form-data"
+                method="POST" aria-label="Здесь вы можете оставить свои данные и пожедание">
+                <input type="hidden" name="admin_email[]" value="lyaisan.333@yandex.ru"><!-- darki@yandex.ru -->
+                <input type="hidden" name="form_subject" value="Сообщение из сайта Sample-Doggie-Daycare">
+                <div class="recording__block">
+                  <!--data здесь он обрабатывает плагин валидатор кода-->
+                  <label class="recording__label" for="name">
+                    <input class="recording__input" type="text" name="name" placeholder="Name"
+                      data-validate-field="name" id="name" required aria-label="Введите ваше имя" maxlength="10">
+                  </label>
+                  <label class="recording__label" for="email">
+                    <input class="recording__input" type="email" name="email" placeholder="Email"
+                      data-validate-field="email" id="email" aria-label="Введите вашу почту" maxlength="35">
+                  </label>
+                  <label class="recording__label" for="tel">
+                    <input class="recording__input" type="tel" name="tel" placeholder="Phone Number"
+                      data-validate-field="tel" data-validate-rules="phone" id="tel" aria-label="Введите ваш телефон">
+                  </label>
+                  <label class="recording__label" for="Select Service">
+                    <input class="recording__input" type="text" name="Select Service" placeholder="Select Service"
+                      maxlength="50">
+                  </label>
+                </div>
+                <div class="recording__form-label" for="message">
+                  <label class="recording__label">
+                    <textarea class="recording__textarea" name="message"
+                      placeholder="Tell us about your puppers include his/her name" maxlength="1000"></textarea>
+                  </label>
+                </div>
+                <button class="recording__button btn" aria-label="Нажмите чтобы отправить">
+                  Make an Appointment
+                </button>
+              </form>
+              <div class="recording__dog modal-dog recording__dog_js  ">
+                <div class="recording__dog-sps modal-dog-sps recording__dog-sps_js">
+                  <button class="recording__modal-close modal-close recording__modal-close_js" title="Закрыть">
+                    &#10006;
+                  </button>
+                  <h2 class="recording__modal-h2 h2">
+                    Спасибо, мы с вами свяжемся!
+                  </h2>
+                  <div class="recording__dog-png"></div>
+                </div>
+              </div>
+              <!--Модалка-recording__dog-->
+            </div>
+          </div>
+          <div class="recording__right">
+            <h3 class="recording__h3-white h3">Maxime placeat facere possimus omnis </h3>
+            <h2 class="recording__h2 h2">5,700+</h2>
+            <h4 class="recording__h4 h4">customers served (and counting)</h4>
+          </div>
+        </div>
+      </section>
+      <section class="gallery video-iframe">
+        <div class="container gallery__container">
+          <div class="gallery__subtitle subtitle">
+            GALLERY & LIVE STREAMS
+          </div>
+          <h3 class="gallery__title h3">Check out our hard workers</h3>
+          <div class="gallery__tabs js-tabs">
+            <ul class="gallery__list">
+              <li class="gallery__item">
+                <button class="gallery__button js-tabs-btn" data-path="gallery" aria-label="gallery">Gallery</button>
+              </li>
+              <li class="gallery__item">
+                <div class="gallery__off"></div><!--Серый-->
+                <button class="gallery__button js-tabs-btn is-active on" data-path="bay-1" aria-label="bay-1">Live
+                  stream: Bay 1</button>
+              </li>
+              <li class="gallery__item">
+                <div class="gallery__off"></div><!--Серый-->
+                <button class="gallery__button js-tabs-btn on" data-path="bay-2" aria-label="bay-2">Live stream: Bay
+                  2</button>
+              </li>
+              <li class="gallery__item">
+                <div class="gallery__off"></div><!--Серый-->
+                <button class="gallery__button js-tabs-btn on" data-path="bay-3" aria-label="bay-3">Live stream: Bay
+                  3</button>
+              </li>
+            </ul>
+            <div class="gallery__bay gallery__bay_padding tab-content" data-target="gallery">
+              <div class="gallery__bay-grid" id="list-js">
+                <div class="gallery__zoom zoomer">
+                  <img class="gallery__bay-img large" src="img/gallery-img/gallery-1.jpg" alt="Фото-1">
+                  <img class="gallery__small small" src="img/gallery-img/gallery-1.jpg" alt="Фото-1">
+                </div>
+                <div class="gallery__zoom zoomer">
+                  <img class="gallery__bay-img" src="img/gallery-img/gallery-2.jpg" alt="Фото-2">
+                  <!-- <img src="img/gallery-img/gallery-2.jpg" alt="Фото-2" class="gallery__small"> -->
+                </div>
+                <div class="gallery__zoom zoomer">
+                  <img class="gallery__bay-img" src="img/gallery-img/gallery-3.jpg" alt="Фото-3">
+                  <!-- <img src="img/gallery-img/gallery-3.jpg" alt="Фото-3" class="gallery__small"> -->
+                </div>
+                <div class="gallery__zoom zoomer">
+                  <img class="gallery__bay-img" src="img/gallery-img/gallery-4.jpg" alt="Фото-4">
+                  <!-- <img src="img/gallery-img/gallery-4.jpg" alt="Фото-" class="gallery__small"> -->
+                </div>
+                <div class="gallery__zoom zoomer">
+                  <img class="gallery__bay-img" src="img/gallery-img/gallery-5.jpg" alt="Фото-5">
+                  <!-- <img src="img/gallery-img/gallery-1.jpg" alt="Фото-" class="gallery__small"> -->
+                </div>
+                <div class="gallery__zoom zoomer">
+                  <img class="gallery__bay-img" src="img/gallery-img/gallery-6.jpg" alt="Фото-6">
+                  <!-- <img src="img/gallery-img/gallery-1.jpg" alt="Фото-" class="gallery__small"> -->
+                </div>
+                <div class="gallery__zoom zoomer">
+                  <img class="gallery__bay-img" src="img/gallery-img/gallery-10.jpg" alt="Фото-10">
+                  <!-- <img src="img/gallery-img/gallery-1.jpg" alt="Фото-" class="gallery__small"> -->
+                </div>
+                <div class="gallery__zoom zoomer">
+                  <img class="gallery__bay-imge" src="img/gallery-img/gallery-11.jpg" alt="Фото-11">
+                  <!-- <img src="img/gallery-img/gallery-1.jpg" alt="Фото-" class="gallery__small"> -->
+                </div>
+                <div class="gallery__zoom zoomer">
+                  <img class="gallery__bay-img" src="img/gallery-img/gallery-12.jpg" alt="Фото-12">
+                  <!-- <img src="img/gallery-img/gallery-1.jpg" alt="Фото-" class="gallery__small"> -->
+                </div>
+                <div class="gallery__zoom zoomer">
+                  <img class="gallery__bay-img" src="img/gallery-img/gallery-13.jpg" alt="Фото-13">
+                  <!-- <img src="img/gallery-img/gallery-1.jpg" alt="Фото-" class="gallery__small"> -->
+                </div>
+              </div>
+              <button class="gallery__button-hide" id="list-button-js">Ещё...</button>
+            </div>
+            <div class="gallery__bay tab-content tab-content-active" data-target="bay-1">
+              <img class="gallery__bay-imgWidth" src="img/gallery-dog.jpg" alt="Фото-7">
+              <span class="gallery__span gallery__span_on-off-1js">Live</span>
+            </div>
+            <div class="gallery__bay gallery__bay_video tab-content" data-target="bay-2">
+              <div class="iframe video-iframeOne"></div>
+            </div>
+            <div class="gallery__bay gallery__bay_video tab-content" data-target="bay-3">
+              <div class="iframe video-iframeTwo"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="feedback">
+          <div class="container feedback__container">
+            <div class="feedback__left">
+              <div class="feedback__subtitle subtitle">
+                <img src="img/whoweare-icon.png" alt="icon">
+                Our CUSTOMERS
+              </div>
+              <h3 class="feedback__title h3">Illum qui dolorem eum quo voluptas ut distinctio</h3>
+            </div>          
+            <ul class="feedback__list">
+              <li class="feedback__item">
+                <p class="feedback__desc desc-p">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua. Ut enim illum ad minim veniam, quis ea exercitation ullamco cillum ut enim dolore.”
+                </p>
+                <div class="feedback__info">
+                  <img src="img/avatar-1.jpg" alt="avatar-1">
+                  <span class="feedback__span">Cullen Bohannon</span>
+                </div>
+              </li>
+              <li class="feedback__item">
+                <p class="feedback__desc desc-p">
+                  “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi ipsam voluptatem aspernatur.”
+                </p>
+                <div class="feedback__info">
+                  <img src="img/avatar-2.jpg" alt="avatar-1">
+                  <span class="feedback__span">Jennifer Thomas</span>
+                </div>
+              </li>                     
+            </ul>     
+          </div>
+        </section> -->
+      <!-- <section class="services">
+          <div class="container services__container">
+            <div class="services__top">
+              <div class="services__block">
+                <div class="services__subtitle subtitle">
+                  <img src="img/whoweare-icon2.png" alt="icon">
+                  OUR IMPACT
+                </div>
+                <h3 class="services__title h3">Nemo enim ipsam voluptatem quia voluptas</h3>
+              </div> 
+              <div class="services__img"></div>
+            </div>  
+            <ul class="services__list">
+              <li class="services__item">
+                <div class="services__image">
+                  <img src="img/icons-1.png" alt="icons-1">
+                </div>
+                <div class="services__block">
+                  <h3 class="services__title-icon h3">16k+</h3>
+                  <p class="services__desc">Oil changes</p>
+                </div>
+              </li>
+              <li class="services__item">
+                <div class="services__image">
+                  <img src="img/icons-2.png" alt="icons-1">
+                </div>
+                <div class="services__block">
+                  <h3 class="services__title-icon h3">13k+</h3>
+                  <p class="services__desc">Transmission repairs</p>
+                </div>
+              </li>
+              <li class="services__item">
+                <div class="services__image">
+                  <img src="img/icons-3.png" alt="icons-1">
+                </div>
+                <div class="services__block">
+                  <h3 class="services__title-icon h3">15k+</h3>
+                  <p class="services__desc">Alignments made</p>
+                </div>
+              </li>
+              <li class="services__item">
+                <div class="services__image">
+                  <img src="img/icons-4.png" alt="icons-1">
+                </div>
+                <div class="services__block">
+                  <h3 class="services__title-icon h3">11,500+</h3>
+                  <p class="services__desc">Engines repaired</p>
+                </div>
+              </li>
+            </ul>          
+          </div>
+        </section>  -->
+      <!-- <section class="conventus">
+          <div class="container conventus__container">
+            <h2 class="visually-hidden">Я для семантики</h2>
+            <div class="conventus__block-conventus">
+              <p class="conventus__desc">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </p>
+              <button class="conventus__button btn">
+                <span class="conventus__span">Make an Appointment</span>
+                <svg width="43" height="40" viewbox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M43 40H0L16.7 0H43V40Z" fill="#E30B0B"></path>
+                  <path d="M27.0001 25.3333L26.0601 24.3933L29.7801 20.6667H21.6667V19.3333H29.7801L26.0601 15.6067L27.0001 14.6667L32.3334 20L27.0001 25.3333Z" fill="white"></path>
+                </svg>            
+              </button>
+            </div>
+          </div>
+        </section>   -->
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container footer__container footer__container_grid">
+          <div class="footer__left">
+            <a href="#" class="footer__logo" aria-label="Логотип logoipsum">
+              <svg width="174" height="41" viewbox="0 0 174 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M50.3921 11.5514H54.7869V29.8887H50.3921V11.5514ZM56.5302 22.965C56.5302 18.4298 59.2256 15.7238 63.3861 15.7238C67.5465 15.7238 70.2419 18.4298 70.2419 22.965C70.2419 27.5002 67.6051 30.2213 63.3861 30.2213C59.167 30.2213 56.5302 27.5757 56.5302 22.965ZM65.8325 22.965C65.8325 20.4706 64.8803 19.0042 63.3861 19.0042C61.8918 19.0042 60.9543 20.5159 60.9543 22.965C60.9543 25.414 61.8772 26.8955 63.3861 26.8955C64.8949 26.8955 65.8325 25.5047 65.8325 22.9801V22.965ZM71.8973 30.7806H76.1163C76.3171 31.2409 76.6566 31.6221 77.0842 31.8672C77.5118 32.1124 78.0047 32.2085 78.4895 32.1412C80.1596 32.1412 81.0385 31.2039 81.0385 29.8433V27.3036H80.9506C80.6005 28.082 80.0323 28.7343 79.3194 29.1762C78.6066 29.6181 77.7817 29.8294 76.9514 29.7829C73.7431 29.7829 71.619 27.2583 71.619 22.9196C71.619 18.5809 73.6406 15.8447 77.01 15.8447C77.8663 15.81 78.7125 16.0463 79.4352 16.5218C80.1578 16.9974 80.7224 17.6894 81.0532 18.5053V15.9807H85.448V29.7375C85.448 33.0482 82.6206 35.1042 78.4456 35.1042C74.5635 35.1042 72.1464 33.3052 71.8973 30.7957V30.7806ZM81.0532 22.9498C81.0532 20.7427 80.0717 19.3519 78.5188 19.3519C76.966 19.3519 76.0138 20.7276 76.0138 22.9498C76.0138 25.1721 76.9514 26.4268 78.5188 26.4268C80.0863 26.4268 81.0532 25.2023 81.0532 22.965V22.9498ZM87.1033 22.9498C87.1033 18.4146 89.7988 15.7086 93.9592 15.7086C98.1197 15.7086 100.83 18.4146 100.83 22.9498C100.83 27.485 98.1929 30.2062 93.9592 30.2062C89.7256 30.2062 87.1033 27.5757 87.1033 22.965V22.9498ZM96.4057 22.9498C96.4057 20.4555 95.4535 18.9891 93.9592 18.9891C92.465 18.9891 91.6007 20.5159 91.6007 22.9801C91.6007 25.4442 92.5236 26.9106 94.0178 26.9106C95.5121 26.9106 96.4057 25.5047 96.4057 22.9801V22.9498ZM102.5 12.6852C102.488 12.2273 102.609 11.7762 102.846 11.389C103.083 11.0019 103.427 10.6961 103.832 10.5105C104.238 10.325 104.688 10.2679 105.125 10.3466C105.563 10.4253 105.968 10.6362 106.288 10.9526C106.609 11.2689 106.832 11.6765 106.928 12.1237C107.025 12.5708 106.99 13.0374 106.829 13.4643C106.668 13.8911 106.388 14.259 106.024 14.5213C105.66 14.7836 105.229 14.9285 104.785 14.9377C104.491 14.9585 104.196 14.9164 103.918 14.8139C103.64 14.7114 103.386 14.5507 103.172 14.342C102.957 14.1333 102.787 13.8811 102.671 13.6012C102.555 13.3213 102.497 13.0197 102.5 12.7154V12.6852ZM102.5 16.011H106.895V29.8887H102.5V16.011ZM122.848 22.9498C122.848 27.485 120.899 30.0701 117.559 30.0701C116.703 30.1268 115.85 29.9108 115.117 29.4512C114.383 28.9915 113.804 28.3105 113.458 27.5002H113.37V34.3332H108.975V15.9807H113.37V18.46H113.458C113.788 17.6363 114.356 16.9375 115.084 16.4587C115.813 15.98 116.667 15.7445 117.53 15.7842C120.899 15.8447 122.906 18.4449 122.906 22.9801L122.848 22.9498ZM118.453 22.9498C118.453 20.7427 117.471 19.3368 115.933 19.3368C114.395 19.3368 113.414 20.7578 113.399 22.9498C113.384 25.1419 114.395 26.5478 115.933 26.5478C117.471 26.5478 118.453 25.1721 118.453 22.9801V22.9498ZM130.392 15.6935C134.04 15.6935 136.252 17.4774 136.354 20.3345H132.355C132.355 19.3519 131.564 18.7321 130.348 18.7321C129.132 18.7321 128.59 19.2159 128.59 19.9264C128.59 20.6369 129.074 20.8636 130.055 21.0753L132.868 21.6649C135.549 22.2544 136.691 23.3731 136.691 25.4744C136.691 28.3467 134.157 30.191 130.421 30.191C126.686 30.191 124.239 28.3467 124.049 25.5198H128.283C128.414 26.5478 129.206 27.1525 130.495 27.1525C131.784 27.1525 132.37 26.7141 132.37 25.9884C132.37 25.2628 131.96 25.1116 130.905 24.8849L128.371 24.3255C125.748 23.7662 124.371 22.33 124.371 20.2136C124.401 17.4925 126.759 15.7238 130.392 15.7238V15.6935ZM151.355 29.8585H147.122V27.2734H147.034C146.801 28.1413 146.288 28.901 145.579 29.4262C144.87 29.9515 144.008 30.2107 143.137 30.1608C142.469 30.2 141.801 30.0908 141.178 29.8406C140.555 29.5905 139.991 29.2052 139.524 28.7108C139.057 28.2163 138.699 27.6243 138.473 26.9747C138.247 26.3251 138.159 25.6331 138.215 24.9453V15.9807H142.61V23.9022C142.61 25.55 143.43 26.4268 144.792 26.4268C145.112 26.4275 145.428 26.3577 145.719 26.2221C146.01 26.0865 146.27 25.8882 146.481 25.6405C146.692 25.3929 146.849 25.1015 146.942 24.7861C147.035 24.4707 147.061 24.1384 147.019 23.8115V15.9807H151.414L151.355 29.8585ZM153.48 15.9807H157.728V18.6565H157.816C158.049 17.8001 158.551 17.0476 159.243 16.5169C159.934 15.9863 160.777 15.7073 161.639 15.7238C162.516 15.6513 163.387 15.9221 164.079 16.4823C164.772 17.0426 165.234 17.8511 165.375 18.7472H165.463C165.728 17.8416 166.279 17.053 167.027 16.5056C167.775 15.9582 168.678 15.6831 169.594 15.7238C170.191 15.703 170.787 15.8123 171.341 16.0445C171.895 16.2766 172.395 16.6265 172.81 17.0713C173.224 17.5162 173.543 18.046 173.747 18.6264C173.95 19.2069 174.032 19.8249 173.989 20.4404V29.8887H169.594V21.6497C169.594 20.138 168.935 19.4426 167.704 19.4426C167.43 19.4402 167.158 19.4986 166.907 19.6138C166.657 19.729 166.433 19.8983 166.251 20.1103C166.069 20.3224 165.933 20.5722 165.853 20.843C165.773 21.1138 165.749 21.3992 165.785 21.68V29.8887H161.61V21.5893C161.61 20.1985 160.951 19.4426 159.749 19.4426C159.472 19.4427 159.198 19.5035 158.944 19.621C158.691 19.7386 158.465 19.9101 158.281 20.1244C158.097 20.3387 157.959 20.5908 157.876 20.8642C157.794 21.1375 157.768 21.4259 157.801 21.7102V29.8887H153.406L153.48 15.9807Z"
+                  fill="#02133C" />
+                <path
+                  d="M38.1013 12.3829C37.3558 10.6238 36.3691 8.9844 35.1715 7.5151C33.401 5.27825 31.1916 3.45367 28.6886 2.16146C26.1857 0.869246 23.4459 0.1387 20.6496 0.0179001C17.8533 -0.1029 15.0639 0.388783 12.465 1.46059C9.86614 2.5324 7.51669 4.16004 5.57129 6.23637C3.62589 8.3127 2.12865 10.7907 1.17813 13.5071C0.227602 16.2236 -0.154663 19.117 0.0564947 21.9969C0.267652 24.8769 1.06744 27.678 2.40323 30.2159C3.73901 32.7539 5.5805 34.9712 7.8065 36.7218C9.23482 37.8675 10.8131 38.7989 12.4943 39.4883C14.8514 40.4851 17.3741 40.9985 19.9215 41C25.1797 40.988 30.2189 38.8251 33.9343 34.9853C37.6497 31.1455 39.7382 25.9422 39.7421 20.516C39.7459 17.7171 39.1873 14.9477 38.1013 12.3829ZM19.9069 4.17416C22.1944 4.17391 24.4544 4.68987 26.5284 5.6859C26.0226 5.9114 25.4909 6.0689 24.9462 6.15454C23.154 6.42226 21.4938 7.2809 20.2133 8.60229C18.9328 9.92369 18.1007 11.637 17.8413 13.4864C17.7274 14.5237 17.2703 15.4886 16.547 16.2184C15.8238 16.9483 14.8787 17.3983 13.8713 17.4925C12.0791 17.7603 10.4189 18.6189 9.13838 19.9403C7.85788 21.2617 7.02583 22.975 6.7664 24.8244C6.67856 25.8107 6.2708 26.7375 5.6091 27.4549C4.46741 24.9654 3.95453 22.2184 4.11819 19.4695C4.28186 16.7205 5.11673 14.0589 6.54514 11.7325C7.97355 9.40597 9.94906 7.49018 12.2878 6.16338C14.6266 4.83658 17.2526 4.14188 19.9215 4.14393L19.9069 4.17416ZM7.79185 31.0981C7.96764 30.9319 8.14344 30.7807 8.31923 30.5993C9.62251 29.2953 10.4591 27.5741 10.6924 25.7164C10.787 24.6721 11.2388 23.6968 11.9669 22.965C12.6675 22.2124 13.6105 21.7501 14.6184 21.6649C16.4107 21.3972 18.0709 20.5386 19.3514 19.2172C20.6319 17.8958 21.4639 16.1825 21.7234 14.333C21.7867 13.2408 22.2409 12.2118 22.9979 11.4456C23.7158 10.7077 24.6678 10.2621 25.6787 10.1909C27.3252 9.9571 28.8607 9.20176 30.0735 8.02909C31.4544 9.21137 32.6244 10.6336 33.5307 12.2317C33.4751 12.3093 33.4112 12.3803 33.3403 12.4433C32.641 13.2025 31.6992 13.6751 30.6888 13.7737C28.8947 14.0367 27.232 14.8938 25.9506 16.2161C24.6693 17.5384 23.8387 19.2542 23.5838 21.1056C23.4806 22.1463 23.0319 23.1182 22.3137 23.8566C21.5955 24.5949 20.652 25.0544 19.6432 25.157C17.8457 25.4227 16.1793 26.2796 14.8914 27.6005C13.6035 28.9214 12.7628 30.6357 12.4943 32.4889C12.4154 33.2278 12.1696 33.9372 11.7765 34.56C10.2734 33.6391 8.9273 32.4696 7.79185 31.0981ZM19.9069 36.9334C18.4203 36.9351 16.941 36.7214 15.5121 36.2985C16.0008 35.3582 16.3186 34.3335 16.4496 33.275C16.5523 32.2366 16.9989 31.2666 17.7141 30.5285C18.4293 29.7904 19.3694 29.3295 20.3756 29.2236C22.1705 28.9589 23.8341 28.1016 25.1174 26.7799C26.4008 25.4583 27.235 23.7433 27.4952 21.8917C27.5979 20.8533 28.0445 19.8832 28.7597 19.1451C29.4749 18.4071 30.415 17.9462 31.4212 17.8402C32.7719 17.6589 34.0593 17.14 35.1715 16.3285C35.789 18.7441 35.8622 21.2736 35.3853 23.7229C34.9085 26.1722 33.8942 28.4763 32.4205 30.4583C30.9468 32.4403 29.0527 34.0477 26.8835 35.157C24.7143 36.2663 22.3278 36.8481 19.9069 36.8579V36.9334Z"
+                  fill="#C40B0B" />
+              </svg>
+            </a>
+            <p class="footer__desc desc-p">
+              This is a blurb about the company sed do eiusmod tempor incididunt ut labore et dolore ex magna aliqua.
+            </p>
+            <nav class="footer__nav">
+              <ul class="footer__list-icone">
+                <li class="footer__item-icone">
+                  <a class="footer__link-icone" href="https://www.facebook.com/" target="blank">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17 2V6H15C14.31 6 14 6.81 14 7.5V10H17V14H14V22H10V14H7V10H10V6C10 4.93913 10.4214 3.92172 11.1716 3.17157C11.9217 2.42143 12.9391 2 14 2H17Z"
+                        fill="#C40B0B" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item-icone">
+                  <a class="footer__link-icone" href="https://twitter.com/" target="blank">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28004 9.09 5.11004 7.38 3.00004 4.79C2.63004 5.42 2.42004 6.16 2.42004 6.94C2.42004 8.43 3.17004 9.75 4.33004 10.5C3.62004 10.5 2.96004 10.3 2.38004 10C2.38004 10 2.38004 10 2.38004 10.03C2.38004 12.11 3.86004 13.85 5.82004 14.24C5.46004 14.34 5.08004 14.39 4.69004 14.39C4.42004 14.39 4.15004 14.36 3.89004 14.31C4.43004 16 6.00004 17.26 7.89004 17.29C6.43004 18.45 4.58004 19.13 2.56004 19.13C2.22004 19.13 1.88004 19.11 1.54004 19.07C3.44004 20.29 5.70004 21 8.12004 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z"
+                        fill="#C40B0B" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item-icone">
+                  <a class="footer__link-icone" href="https://instagram.com/" target="blank">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16.0325 3H7.96724C5.22831 3 3 5.22841 3 7.96735V16.0327C3 18.7717 5.22831 21 7.96724 21H16.0325C18.7717 21 21 18.7716 21 16.0327V7.96735C21.0001 5.22841 18.7717 3 16.0325 3ZM19.4031 16.0327C19.4031 17.8911 17.8911 19.403 16.0327 19.403H7.96724C6.10892 19.4031 4.59705 17.8911 4.59705 16.0327V7.96735C4.59705 6.10903 6.10892 4.59705 7.96724 4.59705H16.0325C17.891 4.59705 19.403 6.10903 19.403 7.96735L19.4031 16.0327Z"
+                        fill="#C40B0B" />
+                      <path
+                        d="M12 7.36206C9.44245 7.36206 7.36182 9.44269 7.36182 12.0002C7.36182 14.5576 9.44245 16.6381 12 16.6381C14.5575 16.6381 16.6381 14.5576 16.6381 12.0002C16.6381 9.44269 14.5575 7.36206 12 7.36206ZM12 15.041C10.3232 15.041 8.95886 13.6769 8.95886 12.0001C8.95886 10.3232 10.3231 8.959 12 8.959C13.6769 8.959 15.0411 10.3232 15.0411 12.0001C15.0411 13.6769 13.6768 15.041 12 15.041Z"
+                        fill="#C40B0B" />
+                      <path
+                        d="M16.8327 6.00781C16.525 6.00781 16.2227 6.13238 16.0054 6.35065C15.787 6.56784 15.6615 6.87022 15.6615 7.17898C15.6615 7.48678 15.7871 7.78905 16.0054 8.00732C16.2226 8.22451 16.525 8.35015 16.8327 8.35015C17.1414 8.35015 17.4427 8.22451 17.661 8.00732C17.8793 7.78905 18.0038 7.48668 18.0038 7.17898C18.0038 6.87022 17.8793 6.56784 17.661 6.35065C17.4438 6.13238 17.1414 6.00781 16.8327 6.00781Z"
+                        fill="#C40B0B" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__item-icone">
+                  <a class="footer__link-icone" href="https://www.youtube.com/" target="blank">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10 15L15.19 12L10 9V15ZM21.56 7.17C21.69 7.64 21.78 8.27 21.84 9.07C21.91 9.87 21.94 10.56 21.94 11.16L22 12C22 14.19 21.84 15.8 21.56 16.83C21.31 17.73 20.73 18.31 19.83 18.56C19.36 18.69 18.5 18.78 17.18 18.84C15.88 18.91 14.69 18.94 13.59 18.94L12 19C7.81 19 5.2 18.84 4.17 18.56C3.27 18.31 2.69 17.73 2.44 16.83C2.31 16.36 2.22 15.73 2.16 14.93C2.09 14.13 2.06 13.44 2.06 12.84L2 12C2 9.81 2.16 8.2 2.44 7.17C2.69 6.27 3.27 5.69 4.17 5.44C4.64 5.31 5.5 5.22 6.82 5.16C8.12 5.09 9.31 5.06 10.41 5.06L12 5C16.19 5 18.8 5.16 19.83 5.44C20.73 5.69 21.31 6.27 21.56 7.17Z"
+                        fill="#C40B0B" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__center">
+            <h5 class="footer__center-desc h5">EXPLORE LINKS</h5>
+            <div class="footer__center-block">
+              <ul class="footer__center-list">
+                <li class="footer__center-item">
+                  <a href="#" class="footer__center-link">About</a>
+                </li>
+                <li class="footer__center-item">
+                  <a href="#" class="footer__center-link">Services</a>
+                </li>
+                <li class="footer__center-item">
+                  <a href="#" class="footer__center-link">Specials</a>
+                </li>
+                <li class="footer__center-item">
+                  <a href="#" class="footer__center-link">Estimates</a>
+                </li>
+              </ul>
+              <ul class="footer__center-list">
+                <li class="footer__center-item">
+                  <a href="#" class="footer__center-link">Reviews</a>
+                </li>
+                <li class="footer__center-item">
+                  <a href="#" class="footer__center-link">Shop</a>
+                </li>
+                <li class="footer__center-item">
+                  <a href="#" class="footer__center-link">Careers</a>
+                </li>
+                <li class="footer__center-item">
+                  <a href="#" class="footer__center-link">FAQs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__right">
+            <h5 class="footer__right-desc h5">CONTACT</h5>
+            <ul class="footer__right-list">
+              <li class="footer__right-item">
+                <a class="footer__right-link js-open-modal" href="#" data-modal="1">
+                  <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M7.99992 1.3335C5.41992 1.3335 3.33325 3.42016 3.33325 6.00016C3.33325 9.50016 7.99992 14.6668 7.99992 14.6668C7.99992 14.6668 12.6666 9.50016 12.6666 6.00016C12.6666 3.42016 10.5799 1.3335 7.99992 1.3335ZM4.66659 6.00016C4.66659 4.16016 6.15992 2.66683 7.99992 2.66683C9.83992 2.66683 11.3333 4.16016 11.3333 6.00016C11.3333 7.92016 9.41325 10.7935 7.99992 12.5868C6.61325 10.8068 4.66659 7.90016 4.66659 6.00016ZM6.33325 6.00016C6.33325 5.07969 7.07944 4.3335 7.99992 4.3335C8.59536 4.3335 9.14557 4.65116 9.44329 5.16683C9.74102 5.6825 9.74102 6.31783 9.44329 6.8335C9.14557 7.34916 8.59536 7.66683 7.99992 7.66683C7.07944 7.66683 6.33325 6.92064 6.33325 6.00016Z"
+                      fill="#C40B0B" />
+                  </svg>
+                  <span class="footer__right-span">321 Pikes Place Parkway Seattle, WA 54321</span>
+                </a>
+              </li>
+              <li class="footer__right-item">
+                <a class="footer__right-link" href="tel:(555)765-4321">
+                  <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M4.66659 0.666504L11.3333 0.673171C12.0666 0.673171 12.6666 1.2665 12.6666 1.99984V13.9998C12.6666 14.7332 12.0666 15.3332 11.3333 15.3332H4.66659C3.93325 15.3332 3.33325 14.7332 3.33325 13.9998V1.99984C3.33325 1.2665 3.93325 0.666504 4.66659 0.666504ZM4.66659 12.6665H11.3333V3.33317H4.66659V12.6665Z"
+                      fill="#C40B0B" />
+                  </svg>
+                  <span class="footer__right-span">(555) 765-4321</span>
+                </a>
+              </li>
+              <li class="footer__right-item">
+                <a class="footer__right-link" href="mailto:Info@company.com">
+                  <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.6666 3.99984C14.6666 3.2665 14.0666 2.6665 13.3333 2.6665H2.66659C1.93325 2.6665 1.33325 3.2665 1.33325 3.99984V11.9998C1.33325 12.7332 1.93325 13.3332 2.66659 13.3332H13.3333C14.0666 13.3332 14.6666 12.7332 14.6666 11.9998V3.99984ZM13.3333 3.99984L7.99992 7.33317L2.66659 3.99984H13.3333ZM7.99992 8.6665L2.66659 5.33317V11.9998H13.3333V5.33317L7.99992 8.6665Z"
+                      fill="#C40B0B" />
+                  </svg>
+                  <span class="footer__right-span">Info@company.com</span>
+                </a>
+              </li>
+              <li class="footer__right-item">
+                <a class="footer__right-link js-open-modal" href="#" data-modal="2">
+                  <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.66774 1H9.33441C9.70108 1 10.0011 1.3 10.0011 1.66667C10.0011 2.03333 9.70108 2.33333 9.33441 2.33333H6.66774C6.30108 2.33333 6.00108 2.03333 6.00108 1.66667C6.00108 1.3 6.30108 1 6.66774 1ZM8.66774 9C8.66774 9.36667 8.36774 9.66667 8.00108 9.66667C7.63441 9.66667 7.33441 9.36667 7.33441 9V6.33333C7.33441 5.96667 7.63441 5.66667 8.00108 5.66667C8.36774 5.66667 8.66774 5.96667 8.66774 6.33333V9ZM12.6877 5.26L13.1877 4.76C13.441 4.50667 13.4477 4.08667 13.1877 3.82667L13.181 3.82C12.921 3.56 12.5077 3.56667 12.2477 3.82L11.7477 4.32C10.7144 3.49333 9.41438 3 8.00104 3C4.80104 3 2.08104 5.64 2.00104 8.84C1.91438 12.2267 4.62771 15 8.00104 15C11.321 15 14.001 12.3133 14.001 9C14.001 7.58667 13.5077 6.28667 12.6877 5.26ZM3.33441 9C3.33441 11.58 5.42108 13.6667 8.00108 13.6667C10.5811 13.6667 12.6677 11.58 12.6677 9C12.6677 6.42 10.5811 4.33333 8.00108 4.33333C5.42108 4.33333 3.33441 6.42 3.33441 9Z"
+                      fill="#C40B0B" />
+                  </svg>
+                  <span class="footer__right-span">Mon - Sat: 7:000 am - 6:00 pm</span>
+                </a>
+              </li>
+            </ul>
+            <div class="footer__modal" data-modal="1">
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class="footer__modal-cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                <path
+                  d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                </svg>
+              <p class="footer__modal-title">Карта</p>
+              <div class="footer__map" id="map"></div>
+            </div>
+            <div class="footer__modal footer__modal_width" data-modal="2">
+              <!--   Svg иконка для закрытия окна  -->
+              <svg class="footer__modal-cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                <path
+                  d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+                </svg>
+              <div class="footer__modal-block-watch">
+                <!--Выводим текущее время-->
+                <div class="footer__modal-clock" id="clock">
+                  <!--Часы-->
+                  <div class="footer__modal-hours" id="hours"></div>
+                  <div class="footer__modal-mig" id="mig">:</div>
+                  <div class="footer__modal-minutes" id="minutes"></div>
+                </div>
+                <p class="footer__modal-title footer__modal-title_weight desc-p">Пн - Сб: 7:00 утра - 6:00 вечера</p>
+                <div class="footer__modal-block-grid">
+                  <div class="footer__modal-date" id="date"></div>
+                  <!-- <div class="footer__modal-block-wekly"> -->
+                  <div class="footer__modal-month" id="month"></div>
+                  /
+                  <div class="footer__modal-weekly" id="weekly"></div>
+                  <!-- </div> -->
+                </div>
+                <div class="footer__modal-year" id="year"></div>
+              </div>
+            </div>
+            <!-- Подложка под модальным окном -->
+            <div class="footer__overlay js-overlay-modal"></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container footer__container footer__container_bottom">
+          <p class="footer__bottom-desc desc-p">
+            Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
+          </p>
+          <span class="footer__bottom-span">
+            &copy;&nbsp;2018&nbsp;Company. Privacy Policy&nbsp;| Terms &amp;&nbsp;Conditions
+          </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  
+
+
+  <!--Аккордеон тоже самое и для телефона-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!--минифицированный библиотека. для телефона-->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <!--Маска формы input-ов-->
+  <script src="js/inputmask.min.js"></script>
+  <!--Валидатор input-ов-->
+  <script src="js/just-validate.js"></script>
+
+  <!-- Мои -->
+  <script src="js/doggies-jeka.js"></script>
+</body>
+
+</html>
