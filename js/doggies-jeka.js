@@ -128,16 +128,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (modalBuy) {
     btnCloseBuy.addEventListener('click', function () {
       document.querySelector('.recording__dog_js').classList.toggle('recording__dog_js_active');
-      const bodyStyli = document.querySelector('body');
-      bodyStyli.style.overflow = 'hidden';
     });
     modalBuy.addEventListener('click', function (event) {
       if (event._notClick) return;
-
       modalBuy.classList.remove('recording__dog_js_active');
       document.querySelector('.recording__dog-sps_js').classList.remove('recording__dog-sps_js_active');
-      bodyStyli.style.overflow = 'auto';
-    });
+    });    
   }
 
 
@@ -246,44 +242,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
-  //--Скрываем часть услуг .gallery__bay-img--//
-  const list = document.getElementById('list-js');
-  const moreButton = document.getElementById('list-button-js');
-  moreButton.addEventListener('click', function () {
-    list.classList.toggle('full');
-  });
-  //
-
-
-
-  //Покажет картинку в Zoome - "Gallery"
-  $(document).ready(function() {
-    var zoomMargin = 15;  
-    function startZoom(e) {
-      $('.zoomer .large').css('left', $(this).width() + zoomMargin).show(); // Контейнер с большим изображением становится видимым.
-    }  
-    function moveZoom(e) {
-      var offset = $(this).offset(), // В переменной offset хранятся координаты блока с миниатюрой
-        x = (e.pageX - offset.left), // В переменной хранится координата X курсора мыши относительно блока с миниатюрой
-        y = (e.pageY - offset.top); // Координата Y курсора мыши.
-      w = $(this).width(), // Ширина миниатюры
-        h = $(this).height(), // Высота миниатюры
-        // Позиционирование фона большого изображения относительно того, куда указывает курсор на миниатюре.
-        $('.large').css({
-          'background-position': (x / w * 100) + '% ' + (y / h * 100) + '%'
-        });
-    }  
-    function endZoom(e) {
-      $('.zoomer .large').hide(); // Контейнер с большим изображением скрывается
-    }
-    $('.small').on({
-      'mouseenter': startZoom, // При наведении мыши на миниатюру срабатывает функция startZoom
-      'mousemove': moveZoom, // Когда курсор мыши перемещается внутри миниатюры срабатывает функция moveZoom
-      'mouseleave': endZoom // Когда мышь уходит из области миниатюры срабатывает функция endZoom
-    });
-  })
-  //
 
 
 

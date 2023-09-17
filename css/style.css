@@ -1446,6 +1446,20 @@ button {
   height: 100%;
 }
 
+/*Картинка в zoom-e*/
+.zoom {
+  cursor: pointer;
+  -webkit-transition: all 0.85s ease;
+  transition: all 0.85s ease;
+}
+
+.zoom:hover {
+  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
+  -webkit-transform: scale(3.1, 3.1);
+  transform: scale(3.1, 3.1);
+}
+/* // Картинка в zoom-e*/
+
 /*Кнопка "Показать другие видео"*/
 .gallery__bay_video iframe .ytp-button {
   display: none;
@@ -2370,21 +2384,20 @@ button {
 
 
 
-.zoomer {
-  position: relative;
+
+
+
+
+/**/
+.zoom {
+  cursor: pointer;
+  -webkit-transition: all 0.85s ease;
+  transition: all 0.85s ease;
 }
 
-.small {
-  background-size: cover;
-  /* Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. */
-  position: absolute;
+.zoom:hover {
+  box-shadow: 0 40px 130px rgba(0, 0, 0, 0.6);
+  -webkit-transform: scale(3.1, 3.1);
+  transform: scale(3.1, 3.1);
 }
 
-.large {
-  background: url("img/gallery-img/gallery-1.jpg") no-repeat;
-  position: absolute;
-  display: none;
-  width: 600px;
-  height: 400px;
-  z-index: 12;
-}
