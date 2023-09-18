@@ -2295,12 +2295,16 @@ button {
     display: block;
   }
 
+  .recording__left {
+    margin-bottom: 77px;
+  }  
+
   .recording__block {
     grid-template-columns: repeat(2, 48.5%);
   } 
 
   .recording__right {
-    padding: 77px 0;
+    padding: 0 0 77px;
   } 
 
   .recording__dog-sps {
@@ -2366,6 +2370,19 @@ button {
     padding: 0 30px;
   }
 
+  .h3 {
+    max-width: 100%;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .h4 {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  
+
   /*** Шапка header-696px***/
   .header__container {
     align-items: start;
@@ -2396,7 +2413,7 @@ button {
   }
 
   .whoweare__container {
-    padding: 30px;
+    padding: 50px 30px 30px;
   }
 
   .whoweare__container::after {
@@ -2411,7 +2428,7 @@ button {
 
 
   .about {
-    padding: 25px 0 60px;
+    padding: 50px 0 60px;
   }
 
   .about__top-list .col-sm-6 {
@@ -2428,11 +2445,26 @@ button {
   }
 
   .recording {
-    padding: 100px 0 77px;
+    padding: 100px 0 40px;
   }  
 
+  .recording__left {
+    margin-right: 0;
+    padding: 25px 40px 47px;
+    border-radius: 30px;
+  }
+
+  .recording__h3 {
+    margin: 0 0 30px;
+  }  
+
+  .recording__button {
+    margin-left: auto;
+    padding: 17px 22px;
+  }
+
   .recording__right {
-    padding: 77px 0 0;
+    padding: 0;
   }
 
   .recording__block {
@@ -2452,6 +2484,16 @@ button {
 
   .recording__dog-sps {
     flex-basis: 224px;
+  }
+
+  .recording__h3-white {
+    margin-bottom: 40px;
+  }
+
+  .recording__h2 {
+    margin: 0 0 40px;
+    font-size: 86px;
+    line-height: 1;
   }
 
   .gallery__container {
@@ -2477,6 +2519,10 @@ button {
 
   .gallery__item:not(:last-child) {
     margin: 0 10px 10px 0;
+  }
+
+  .gallery__button {
+    padding-left: 0;
   }
 
   .gallery__button::after {
@@ -2512,6 +2558,7 @@ button {
    
   .gallery__bay-imgWidth {
     margin-bottom: -60px;
+    border-radius: 15px;
     height: 200px;
   }
 
@@ -2520,6 +2567,15 @@ button {
     right: 25px;
     padding: 1px 7px;
     font-size: 14px;
+  }
+
+  .gallery__bay_video .iframe {
+    width: 100%;
+  }
+
+  .gallery__bay_video iframe {
+    width: 100%;
+    height: 280px;
   }
 
 }
@@ -2542,7 +2598,6 @@ button {
     margin-bottom: 25px;
   }
 
-
    /*Картинка в zoom-e 484px*/
   .zoom:hover, .zoom:nth-child(odd):hover, .zoom:nth-child(even):hover {
     box-shadow: inherit;
@@ -2551,8 +2606,26 @@ button {
   }
    /*Картинка в zoom-e 484px*/
 
-  
+  .gallery__bay_width1024px {
+    width: 100%;
+  }
 
+  .gallery__bay-imgWidth {
+    border-radius: 20px;
+    width: 100%;
+    height: 150px;
+  }
+
+  .gallery__span {
+    top: 10px;
+    right: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .gallery__bay_video iframe {
+    height: 200px;
+  }
 }
 
 /**/
