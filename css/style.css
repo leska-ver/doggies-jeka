@@ -2353,8 +2353,7 @@ button {
 
 }
 
-@media (max-width: 888px) { 
-  .whoweare__image img {
+@media (max-width: 888px) { .whoweare__image img {
     height: 280px;
   }
 
@@ -2632,6 +2631,10 @@ button {
     width: 100px;
     height: 100px;
   }
+  
+  .about__center-naLeft {
+    width: 100%;
+  }  
 
   .recording__left {
     padding: 25px 25px 40px;
