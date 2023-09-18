@@ -2381,6 +2381,12 @@ button {
     font-size: 18px;
     line-height: 1.2;
   }
+
+  .js-validate-error-label {
+    top: -19px;
+    left: 7px;
+    font-size: 12px;
+  }
   
 
   /*** Шапка header-696px***/
@@ -2468,6 +2474,10 @@ button {
   }
 
   .recording__block {
+    display: block;
+  }
+
+  .recording__label {
     display: block;
   }
 
@@ -2588,6 +2598,10 @@ button {
 
   .whoweare__container {
     padding: 50px 15px 20px;
+  }
+
+  .recording__left {
+    padding: 25px 25px 40px;
   }
 
   .gallery__container {
