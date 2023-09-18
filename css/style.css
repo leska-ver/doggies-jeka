@@ -309,10 +309,7 @@ button {
 .header {
   padding: 24px 0 314px;
   max-width: 100%;
-  background-image: url("../img/hero-memDog.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/hero-memDog.jpg") center / cover no-repeat;
   background-color: var(--color-lueViolet);
 }
 
@@ -798,9 +795,7 @@ button {
   height: 447px;
   width: 60%;
   height: 64%;
-  background-image: url("../img/whoweare-paytno.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../img/whoweare-paytno.png") cover no-repeat;
 }
 
 .whoweare__container::after {
@@ -811,8 +806,7 @@ button {
   margin: -109px -77px 0 0;
   width: 201px;
   height: 317px;
-  background-image: url(../img/stylizeCircles.png);
-  background-repeat: no-repeat;
+  background: url("../img/stylizeCircles.png") no-repeat;
 }
 
 .whoweare__subtitle {
@@ -840,24 +834,44 @@ button {
   margin: 0 0 -120px 0;
   border-radius: 40px;
   box-shadow: 0px 16px 24px 0px rgba(38, 38, 38, 0.20), 0px 8px 16px 0px rgba(38, 38, 38, 0.24);
-  width: max-content/*ширина для 1024px*/;
+  width: 100%;
 }
 
 .whoweare__image img {
   position: relative;
+  display: block;
   border-radius: 40px;
-  max-width: 100%;
+  width: 100%;
+  height: 420px;
+  background-color: var(--color-alto);
   z-index: 1;
+}
+
+.whoweare__image img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 240px;
+  height: 240px;
+  background: url(../img/gallery-dogSVG.png) center / cover no-repeat;
 }
 /*** // Фото whoweare-1440px***/
 
 /*** О нас about-1440px***/
 .about {
-  padding: 55px 0 120px;
+  padding: 55px 0 121px;
 }
 
 .about__top {
-  padding-bottom: 72px;
+  padding-bottom: 74px;
+}
+
+.about__top-subtitle {
+  margin-bottom: 25px;
 }
 
 .about__top-h3 {
@@ -892,10 +906,7 @@ button {
 .about__center {
   padding: 24px 0 170px;
   max-width: 100%;
-  background-image: url("../img/dog-Image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/dog-Image.jpg") center / cover no-repeat;
   background-color: var(--color-java);
 }
 
@@ -936,10 +947,7 @@ button {
   right: 0;
   width: 721px;
   height: 130%;
-  background-image: url("../img/icons-figure/figure-01.png");  
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url("../img/icons-figure/figure-01.png") right / contain no-repeat;
   z-index: -1;
 }
 
@@ -1071,10 +1079,7 @@ button {
 .recording {
   position: relative;
   padding: 130px 0 209px;
-  background-image: url("../img/recording-img.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../img/recording-img.jpg") center / cover no-repeat;
   background-color: var(--color-lueViolet);
 }
 
@@ -1093,7 +1098,7 @@ button {
 }
 
 .recording__h3 {
-  margin-bottom: 44px;
+  margin-bottom: 43px;
   text-align: center;
   line-height: 50px;
   color: var(--color-white);
@@ -1111,7 +1116,7 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 225px);
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px 22px;
+  gap: 21px 22px;
   margin-bottom: 19px;
 }
 
@@ -1255,12 +1260,9 @@ button {
 .recording__dog-png {
   width: 135px;
   height: 145px;
-  background-image: url("../img/icons-dog/dog-08.png");
+  background-image: url("../img/icons-dog/dog-08.png") right / contain no-repeat;
   /*Для codepen
-  background-image: url("https://hohrin.expert/wp-content/uploads/2022/04/3.png");*/
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  background-image: url("https://hohrin.expert/wp-content/uploads/2022/04/3.png") right / contain no-repeat;*/
 }
 
 .recording__modal-h2 {
@@ -1478,10 +1480,26 @@ button {
 }
 
 .gallery__bay-imgWidth {
+  position: relative;
+  display: block;
   margin-bottom: -120px;
   border-radius: 40px;
+  box-shadow: 0px 16px 24px 0px rgba(38, 38, 38, 0.20), 0px 8px 16px 0px rgba(38, 38, 38, 0.24);
   height: 480px;
   background-color: var(--color-alto);
+}
+
+.gallery__bay-imgWidth::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 240px;
+  height: 240px;
+  background: url("../img/gallery-dogSVG.png") center / cover no-repeat;
 }
 
 .gallery__span {
@@ -1524,10 +1542,7 @@ button {
   bottom: 0;
   width: 721px;
   height: 130%; 
-  background-image: url("../img/icons-figure/figure-02.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url("../img/icons-figure/figure-02.png") bottom / contain no-repeat;
   z-index: -1;
 }
 
@@ -1588,10 +1603,7 @@ button {
   left: 61px;
   width: 86%;
   height: 172%;
-  background-image: url(../img/picture-transparent-big.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
+  background: url("../img/picture-transparent-big.png") top / contain no-repeat;
 }
 
 .services__top {
@@ -1615,9 +1627,7 @@ button {
   margin-top: -181px;
   width: 498px;
   height: 315px;
-  background-image: url("../img/services-auto.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../img/services-auto.jpg") cover no-repeat;
 }
 
 .services__list {
@@ -2280,10 +2290,6 @@ button {
     margin-bottom: 40px;
   } 
 
-  .whoweare__image {
-    width: 100%;
-  }
-
 
   .recording {
     padding: 100px 0;
@@ -2348,6 +2354,15 @@ button {
 }
 
 @media (max-width: 888px) { 
+  .whoweare__image img {
+    height: 280px;
+  }
+
+  .whoweare__image img::before {
+    width: 140px;
+    height: 140px;
+  }
+
   .gallery__bay-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 165px);
@@ -2355,12 +2370,16 @@ button {
 
   .gallery__bay_width1024px {
     margin: 0 auto;
-    width: max-content;
   }   
 
   .gallery__bay-imgWidth {
     margin-bottom: -80px;
     height: 280px;
+  }  
+
+  .gallery__bay-imgWidth::before {
+    width: 140px;
+    height: 140px;
   }  
 
 }
@@ -2432,6 +2451,10 @@ button {
     margin: 0 0 -70px 0;
   }  
 
+  .whoweare__image img {
+    border-radius: 20px;
+    height: 200px;
+  }
 
   .about {
     padding: 50px 0 60px;
@@ -2568,7 +2591,7 @@ button {
    
   .gallery__bay-imgWidth {
     margin-bottom: -60px;
-    border-radius: 15px;
+    border-radius: 20px;
     height: 200px;
   }
 
@@ -2600,6 +2623,16 @@ button {
     padding: 50px 15px 20px;
   }
 
+  .whoweare__image img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .whoweare__image img::before {
+    width: 100px;
+    height: 100px;
+  }
+
   .recording__left {
     padding: 25px 25px 40px;
   }
@@ -2624,12 +2657,7 @@ button {
   }
    /*Картинка в zoom-e 484px*/
 
-  .gallery__bay_width1024px {
-    width: 100%;
-  }
-
   .gallery__bay-imgWidth {
-    border-radius: 20px;
     width: 100%;
     height: 150px;
   }
@@ -2643,6 +2671,15 @@ button {
 
   .gallery__bay_video iframe {
     height: 200px;
+  }
+
+  .gallery__bay-imgWidth::before {
+    width: 100px;
+    height: 100px;
+  }  
+
+  .gallery__bay_width1024px {
+    width: 100%;
   }
 }
 
