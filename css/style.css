@@ -1429,6 +1429,7 @@ button {
 }
 
 .gallery__bay.tab-content-active {
+  position: relative;
   display: block;
 }
 /* -//- Табы - Каталок фотографий*/
@@ -1446,7 +1447,7 @@ button {
   height: 100%;
 }
 
-/*Картинка в zoom-e*/
+/*Картинка в zoom-e 1440px*/
 .zoom {
   cursor: pointer;
   -webkit-transition: all 0.85s ease;
@@ -1455,15 +1456,15 @@ button {
 
 .zoom:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
-  -webkit-transform: translate(50%, 50%) scale(3.1);
-  transform: translate(50%, 50%) scale(3.1);
+  -webkit-transform: translate(50%, 50%) scale(2.5);
+  transform: translate(50%, 50%) scale(2.5);
 }
 
 .zoom:nth-child(4n):hover {/*Каждый четвёртый*/
-  -webkit-transform: translate(-50%, 50%) scale(3.1);
-  transform: translate(-50%, 50%) scale(3.1);
+  -webkit-transform: translate(-50%, 50%) scale(2.5);
+  transform: translate(-50%, 50%) scale(2.5);
 }
-/* // Картинка в zoom-e*/
+/* // Картинка в zoom-e 1440px*/
 
 /*Кнопка "Показать другие видео"*/
 .gallery__bay_video iframe .ytp-button {
@@ -2039,6 +2040,18 @@ button {
   .about__bottom-item:nth-child(3n) {
     margin-right: 20px;
   }
+
+  /*Картинка в zoom-e 1280px*/
+  .zoom:hover {
+    -webkit-transform: translate(50%, 50%) scale(2);
+    transform: translate(50%, 50%) scale(2);
+  }
+
+  .zoom:nth-child(4n):hover {/*Каждый четвёртый*/
+    -webkit-transform: translate(-50%, 50%) scale(2);
+    transform: translate(-50%, 50%) scale(2);
+  }
+  /* // Картинка в zoom-e 1280px*/
 }
 
 @media (max-width: 1024px) {
@@ -2292,7 +2305,59 @@ button {
 
   .recording__dog-sps {
     flex-basis: 424px;
+  }  
+
+  .gallery__container {
+    padding: 40px;
   }
+
+  .gallery__list {
+    margin-bottom: 50px;
+    padding: 0;
+  }  
+
+  .gallery__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .gallery__button {
+    padding: 0 17px 2px;
+  }  
+
+  .gallery__bay-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 190px);
+  }
+
+  /*Картинка в zoom-e 1024px*/
+  .zoom:hover, .zoom:nth-child(4n):hover {/*Каждый четвёртый*/
+    -webkit-transform: translate(50%, 50%) scale(2);
+    transform: translate(50%, 50%) scale(2);
+  }
+
+  .zoom:nth-child(3n):hover {/*Каждый четвёртый*/
+    -webkit-transform: translate(-50%, 50%) scale(2);
+    transform: translate(-50%, 50%) scale(2);
+  }
+  /* // Картинка в zoom-e 1024px*/
+
+}
+
+@media (max-width: 888px) { 
+  .gallery__bay-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 165px);
+  }
+
+  .gallery__bay_width1024px {
+    margin: 0 auto;
+    width: max-content;
+  }   
+
+  .gallery__bay-imgWidth {
+    margin-bottom: -80px;
+    height: 280px;
+  }  
 
 }
 
@@ -2362,6 +2427,13 @@ button {
     width: 100%;
   }
 
+  .recording {
+    padding: 100px 0 77px;
+  }  
+
+  .recording__right {
+    padding: 77px 0 0;
+  }
 
   .recording__block {
     display: block;
@@ -2382,8 +2454,106 @@ button {
     flex-basis: 224px;
   }
 
+  .gallery__container {
+    margin: 0;
+    padding: 35px 30px;
+    border-radius: 0;
+  }
+
+  .gallery__subtitle {
+    margin-bottom: 18px;
+  }
+
+  .gallery__title {
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+
+  .gallery__list {
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .gallery__item:not(:last-child) {
+    margin: 0 10px 10px 0;
+  }
+
+  .gallery__button::after {
+    display: none;
+  }
+
+  .gallery__bay-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 140px);
+  }
+
+   /*Картинка в zoom-e 696px*/
+  .zoom:nth-child(odd):hover {
+    -webkit-transform: translate(50%, 50%) scale(1.5);
+    transform: translate(50%, 50%) scale(1.5);
+  }
+
+  .zoom:nth-child(even):hover {
+    -webkit-transform: translate(-50%, 50%) scale(1.5);
+    transform: translate(-50%, 50%) scale(1.5);
+  }
+
+  .zoom:nth-child(5):hover, .zoom:nth-child(7):hover, .zoom:nth-child(9):hover {
+    -webkit-transform: translate(50%, -50%) scale(1.5);
+    transform: translate(50%, -50%) scale(1.5);
+  }
+
+  .zoom:nth-child(6):hover, .zoom:nth-child(8):hover, .zoom:nth-child(10):hover {
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+   /*Картинка в zoom-e 696px*/
+   
+  .gallery__bay-imgWidth {
+    margin-bottom: -60px;
+    height: 200px;
+  }
+
+  .gallery__span {
+    top: 15px;
+    right: 25px;
+    padding: 1px 7px;
+    font-size: 14px;
+  }
+
 }
 
+
+@media (max-width: 484px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .gallery__container {
+    padding: 20px 15px;
+  }
+
+  .gallery__bay-grid {
+    display: block;
+  }
+
+  .gallery__bay-img:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+
+   /*Картинка в zoom-e 484px*/
+  .zoom:hover, .zoom:nth-child(odd):hover, .zoom:nth-child(even):hover {
+    box-shadow: inherit;
+    -webkit-transform: none;
+    transform: none;
+  }
+   /*Картинка в zoom-e 484px*/
+
+  
+
+}
 
 /**/
 
