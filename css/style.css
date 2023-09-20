@@ -42,6 +42,7 @@
   --color-froly: #f2726f;/*#f2726f-Secondary, avto-jeka - --color-milanoRed-#c40b0b*/
   --color-malachite: #21c613;
   --color-java: #28c3bf;
+  --color-jungleGreen: #2ab1ad;
 }
 
 html {
@@ -226,7 +227,7 @@ button {
 }
 
 .subtitle {
-  margin: 0 0 28px -3px;
+  margin: 0 0 27px -3px;
   padding: 0 0 0 35px;
   font-weight: 700;
   font-size: 12px;
@@ -789,13 +790,13 @@ button {
   content: '';
   position: absolute;
   left: 0px;
-  bottom: 0;
+  bottom: -8px;
   margin-left: -17px;
   width: 640px;
   height: 447px;
-  width: 60%;
-  height: 64%;
-  background: url("../img/whoweare-paytno.png") cover no-repeat;
+  width: 65.5%;
+  height: 65%;
+  background: url("../img/whoweare-paytno.png") top / cover no-repeat;
 }
 
 .whoweare__container::after {
@@ -867,15 +868,15 @@ button {
 }
 
 .about__top {
-  padding-bottom: 74px;
+  padding-bottom: 73px;
 }
 
 .about__top-subtitle {
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .about__top-h3 {
-  margin: 0 0 67px;
+  margin: 0 0 68px;
 }
 
 .about__top-list {
@@ -999,7 +1000,7 @@ button {
 
 .about__bottom-h3 {
   margin-top: 26px;
-  margin-bottom: 76px;
+  margin-bottom: 78px;
 }
 
 .about__bottom-img {
@@ -1091,14 +1092,14 @@ button {
 
 .recording__left {
   margin-right: auto;
-  padding: 35px 57px 77px; 
+  padding: 34px 57px 77px; 
   border-radius: 40px; 
   background-color: var(--color-lueViolet);
   z-index: 5;
 }
 
 .recording__h3 {
-  margin-bottom: 43px;
+  margin-bottom: 44px;
   text-align: center;
   line-height: 50px;
   color: var(--color-white);
@@ -1116,8 +1117,8 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 225px);
   grid-template-rows: repeat(2, 1fr);
-  gap: 21px 22px;
-  margin-bottom: 19px;
+  gap: 19px 22px;
+  margin-bottom: 20px;
 }
 
 /*Для формы отправки*/
@@ -1589,8 +1590,10 @@ button {
 
 /*** Услуги services-1440px***/
 .services {
-  padding: 101px 0 174px;
-  background-color: var(--color-lueViolet);
+  position: relative;
+  padding: 101px 0 196px;
+  background-color: var(--color-jungleGreen);
+  z-index: 1;
 }
 
 .services__container {
@@ -1600,11 +1603,12 @@ button {
 .services__container::before {
   content: '';
   position: absolute;
-  top: -70px;
-  left: 61px;
-  width: 86%;
-  height: 172%;
-  background: url("../img/picture-transparent-big.png") top / contain no-repeat;
+  top: -101px;
+  right: -257px;
+  width: 100%;
+  height: 105%;
+  background: url("../img/icons-figure/figure-03.png") top / contain no-repeat;
+  z-index: -1;
 }
 
 .services__top {
@@ -1614,8 +1618,8 @@ button {
 }
 
 .services__subtitle {
-  margin-bottom: 28px;
   color: var(--color-white);
+  background: url("../img/overlineMark-white.png") top left / 26px no-repeat;
 }
 
 .services__title {
@@ -1626,9 +1630,10 @@ button {
 
 .services__img {
   margin-top: -181px;
+  border-radius: 40px;
   width: 498px;
   height: 315px;
-  background: url("../img/services-auto.jpg") cover no-repeat;
+  background: url("../img/services-dog.jpg") center / cover no-repeat;
 }
 
 .services__list {
@@ -1665,23 +1670,37 @@ button {
 
 /*** Кнопка встречи conventus-1440px***/
 .conventus {
-  padding: 20px 0 44px;
+  position: relative;
+  margin-top: -78px;
+  padding: 0 0 46px;
+  z-index: 1;
 }
+
+.conventus__container {
+  padding: 44px 76px 48px 70px;
+  border-radius: 20px;
+  width: 70.8%;
+  background-color: var(--color-lueViolet);
+}
+
 .conventus__block-conventus {
   display: flex;
   justify-content: space-between;
-  margin-top: -97px;
-  padding: 45px 76px 45px 70px;
-  background-color: var(--color-white);
 }
 
 .conventus__desc {
-  margin: 0;
+  margin: 0 20px 0 0;
   width: 502px;
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
-  color: var(--color-lueViolet);
+  color: var(--color-white);
+}
+
+.conventus__button {
+  margin-top: 6px;
+  padding: 17px 32px;
+  min-width: 210px;
 }
 
 .conventus__button:focus {
@@ -1695,16 +1714,12 @@ button {
 .conventus__button:active {
   background-color: #d00c0c;
 }
-
-.conventus__button svg {
-  margin-left: 5px;
-}
 /*** // Кнопка встречи conventus-1440px***/
 
 
 /*** Подвал footer-1440px***/
 .footer {
-  padding: 45px 0 0;
+  padding: 42px 0 0;
 }
 
 .footer__container {
@@ -1713,7 +1728,7 @@ button {
 }
 
 .footer__top {
-  padding-bottom: 89px;
+  padding-bottom: 98px;
 }
 
 .footer__container_grid {
@@ -1729,9 +1744,9 @@ button {
 }
 
 .footer__desc {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 23px;
   color: var(--color-tundora);
 }
 
@@ -1850,7 +1865,7 @@ button {
 }
 
 .footer__right-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .footer__right-link {
@@ -2063,6 +2078,18 @@ button {
     transform: translate(-50%, 50%) scale(2);
   }
   /* // Картинка в zoom-e 1280px*/
+
+
+  .services__container::before {
+    right: -20%;
+    width: 95%;
+    height: 95%;
+  }
+
+
+  .conventus__container {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -2374,6 +2401,76 @@ button {
     grid-template-columns: 1fr;
     gap: 15px;
   }
+
+
+  .services {
+    padding: 70px 0;
+  }
+
+  .services__container::before {
+    display: none;
+  }
+
+  .services__top {
+    margin-bottom: 20px;
+  }
+
+  .services__img {
+    margin-top: -111px;
+    width: 383px;
+    height: 280px;
+  }
+
+  .services__title-icon {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .services__desc {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+
+  .conventus {
+    margin-top: -57px;
+    padding: 20px 0;
+  }
+
+  .conventus__block-conventus {
+    padding: 35px;
+  }
+  
+  .footer {
+    padding: 35px 0 0;
+  }
+
+  .footer__top {
+    padding-bottom: 70px;
+  }
+
+  .footer__container_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: end;
+    gap: 50px;
+  }
+
+  .footer__item-icone:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .footer__right {
+    margin-left: 0;
+  }
+
+  .footer__right-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .footer__right-link {
+    grid-template-columns: 16px 1fr;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 888px) { .whoweare__image img {
@@ -2420,6 +2517,106 @@ button {
     margin: 0 auto;
   }
 
+
+  .services {
+    padding: 50px 0;
+  }
+
+  .services__top {
+    margin-bottom: 20px;
+  }
+
+  .services__block {
+    margin-top: -6px;
+    padding-top: 0;
+  }
+
+  .services__title {
+    width: 100%;
+  }
+  
+  .services__list {
+    grid-template-columns: repeat(2, 50%);
+    gap: 30px 20px;
+  }
+
+  .services__img {
+    display: none;
+  }
+
+
+  .conventus {
+    margin-top: -20px;
+    padding: 0 0 31px;
+  }
+
+  .conventus__block-conventus {
+    display: block;
+    padding: 25px;
+  }
+
+  .conventus__desc {
+    margin: 0 0 30px 0;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 30px 0 0;
+  }
+
+  .footer__container_grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer__left {
+    width: 350px;
+  }
+
+  .footer__desc {
+    margin-bottom: 20px;
+  }
+
+  .footer__center-desc, .footer__right-desc {
+    margin-bottom: 20px;
+  }
+
+  .footer__center-block {
+    justify-content: start;
+  }
+  
+  .footer__center-list:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .footer__center-desc, .footer__right-desc {
+    margin-bottom: 20px;
+  }
+
+  .footer__modal {
+    padding: 20px;
+    width: 400px;
+  }
+
+  .footer__map {
+    height: 260px;
+  }
+
+  .footer__container_bottom {
+    display: block;
+    justify-content: end;
+  }
+
+  .footer__bottom-desc {
+    margin-bottom: 25px;
+  }
+
+  .footer__bottom-span {
+    display: flex;
+    justify-content: end;
+  }
 }
 
 @media (max-width: 696px) {
@@ -2649,6 +2846,21 @@ button {
     height: 280px;
   }
 
+
+  .conventus {
+    margin-top: 0;
+    padding: 0 0 20px;
+  }
+
+  .conventus__container {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .conventus__block-conventus {
+    display: block;
+    padding: 25px 0;
+  }
 }
 
 
@@ -2750,7 +2962,71 @@ button {
   .feedback__list {
     grid-template-columns: repeat(1, 1fr);
   }
+
+
+  .services {
+    padding: 30px 0;
+  }
+
+  .services__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .services__title {
+    margin-bottom: 20px;
+  }
+
+  .services__list {
+    gap: 25px 5px;
+  }
+
+  .services__image img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .conventus__button {
+    width: 100%;
+  }
+
+
+  .footer {
+      padding: 15px 0 0;
+  }
+
+  .footer__center-desc, .footer__right-desc {
+    margin-bottom: 10px;
+  }
+
+  .footer__center-block {
+      display: block;
+  }
+
+  .footer__center-list {
+      display: flex;
+  }
+
+  .footer__center-list:not(:last-child) {
+      margin-right: 0;
+  }
+
+  .footer__center-item:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  .footer__center-desc, .footer__right-desc {
+      margin-bottom: 10px;
+  }
+
+  .footer__modal {
+      width: 100%;
+  }
+
+  .footer__bottom {
+    padding-bottom: 30px;
+  }
 }
 
 /**/
+
 
