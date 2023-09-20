@@ -317,7 +317,114 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  
+  //--Яндекс карта--//
+  ymaps.ready(function () {
+    let myMap = new ymaps.Map('map', { //1 метка
+        center: [47.60957850699349, -122.3417605],
+        zoom: 16
+      }, {
+        searchControlProvider: 'yandex#search'
+      }),
+
+      // Создаём макет содержимого.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myGeoObject = new ymaps.Placemark(myMap.getCenter(), {
+        hintContent: 'logoipsum',
+        balloonContent: 'Mon - Sat: 7:000 am - 6:00 pm'
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        // iconImageHref: 'https://img2.freepng.ru/20180514/tpw/kisspng-middle-market-company-business-development-marketi-5af94049274d16.924943061526284361161.jpg',
+        iconImageHref: 'img/ymaps.svg',
+        // Размеры метки.
+        iconImageSize: [20, 20],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-5, -8],
+        // Смещение слоя с содержимым относительно слоя с картинкой.
+        iconContentOffset: [15, 15],
+        // Макет содержимого.
+        iconContentLayout: MyIconContentLayout
+      });
+
+    myMap.geoObjects
+      .add(myGeoObject);
+  });  
+
+
+
+  //--Часы, они в модальном окне--// 
+  window.onload = function () {
+    window.setInterval(
+      function () {
+        let d = new Date();
+        let month_num = d.getMonth();
+        let day = d.getDate();
+        let hours = d.getHours();
+        let minutes = d.getMinutes();
+        let seconds = d.getSeconds();
+        let weekday_num = d.getDay();
+        let year = d.getFullYear();
+        //Создаем масив месяцев    
+        let month = new Array(12);
+        month[0] = "Января";
+        month[1] = "Февраля";
+        month[2] = "Марта";
+        month[3] = "Апреля";
+        month[4] = "Мая";
+        month[5] = "Июня";
+        month[6] = "Июля";
+        month[7] = "Августа";
+        month[8] = "Сентября";
+        month[9] = "Октября";
+        month[10] = "Ноября";
+        month[11] = "Декабря";
+        let month_full = month[d.getMonth()];
+
+        //Создаем масив дней недели
+        let weekday = new Array(7);
+        weekday[0] = "Воскресенье";
+        weekday[1] = "Понедельник";
+        weekday[2] = "Вторник";
+        weekday[3] = "Среда";
+        weekday[4] = "Четверг";
+        weekday[5] = "Пятница";
+        weekday[6] = "Суббота";
+        let weekday_full = weekday[d.getDay()];
+
+        if (day <= 9) day = "0" + day;
+        if (hours <= 9) hours = "0" + hours;
+        if (minutes <= 9) minutes = "0" + minutes;
+        if (seconds <= 9) seconds = "0" + seconds;
+
+        //выводим на страице
+        document.getElementById("weekly").innerHTML = weekday_full; //День недели
+        document.getElementById("month").innerHTML = month_full; //Название месяца
+        document.getElementById("hours").innerHTML = hours; //Часы
+        document.getElementById("minutes").innerHTML = minutes; //Минуты
+        //document.getElementById("seconds").innerHTML = seconds;//Секунды
+        document.getElementById("date").innerHTML = day; //Дата
+        document.getElementById("year").innerHTML = year; //Год    
+      }, 1000);
+  }
+
+  //мирцание : между часами и минутами
+  function Mig() {
+    let label = document.getElementById('mig'); //находим : по id
+    if (label.style.visibility == "visible") { //отображаем : с помощью стилей
+      label.style.visibility = "hidden"; //скрываем : с помощью стилей
+    } else {
+      label.style.visibility = "visible"; //отображаем : с помощью стилей
+    }
+  } {
+    setInterval(Mig, 1000); //задаем интервал мигания 1 сек.
+  }
+
 
 
 
