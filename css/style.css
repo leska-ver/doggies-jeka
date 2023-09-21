@@ -1008,44 +1008,6 @@ button {
   margin: 0 auto;
   width: 66px;
   height: 67px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.about__bottom-img_one {
-  background-image: url("../img/icons-dog/dog-01.svg");
-}
-
-.about__bottom-img_two {
-  background-image: url("../img/icons-dog/dog-02.svg");
-}
-
-.about__bottom-img_tfree {
-  background-image: url("../img/icons-dog/dog-03.svg");
-}
-
-.about__bottom-img_four {
-  background-image: url("../img/icons-dog/dog-04.svg");
-}
-
-.about__bottom-img_fine {
-  background-image: url("../img/icons-dog/dog-05.svg");
-}
-
-.about__bottom-img_six {
-  background-image: url("../img/icons-dog/dog-06.svg");
-}
-
-.about__bottom-img_seven {
-  background-image: url("../img/icons-dog/dog-07.png");
-}
-
-.about__bottom-img_eight {
-  background-image: url("../img/icons-dog/dog-08.png");
-}
-
-.about__bottom-img_nine {
-  background-image: url("../img/icons-dog/dog-09.png");
 }
 
 .about__bottom-h4 {
