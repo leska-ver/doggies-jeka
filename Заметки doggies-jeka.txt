@@ -13,3 +13,14 @@
           <source srcset="img/puppy.webp" type="image/webp">
           <img src="img/puppy.png" alt="Пёсик">
         </picture>
+
+Я ставлю 
+.whoweare__image img::before {
+  content: "";
+  position: absolute;
+  background: url(../img/dog.png) center / cover no-repeat;
+}
+
+-------------------
+
+https://squoosh.app/editor - сжимание картинки

@@ -2459,7 +2459,8 @@ button {
   }
 }
 
-@media (max-width: 888px) { .whoweare__image img {
+@media (max-width: 888px) { 
+  .whoweare__image img {
     height: 280px;
   }
 
