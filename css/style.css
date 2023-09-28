@@ -227,7 +227,8 @@ button {
   overflow: hidden;
 }
 
-.subtitle {
+/*Лайфхак от Жеки. Шаблон микс и модификаторы (_) pattern*/
+.pattern__subtitle {
   margin: 0 0 27px -3px;
   padding: 0 0 0 35px;
   font-weight: 700;
@@ -238,6 +239,23 @@ button {
   vertical-align: middle;
   background: url("../img/overlineMark-blue.png") top left / 26px no-repeat;
 }
+
+.pattern__subtitle_white {
+  color: var(--color-white);
+  background: url("../img/overlineMark-white.png") top left / 26px no-repeat;
+}
+
+.pattern__title {
+  position: relative;
+  margin: 0 0 36px 0;
+  max-width: 583px;
+  z-index: 1;/*Для ширины 1024px*/
+}
+
+.pattern__title_white {
+  color: var(--color-white);
+}
+/* // Лайфхак от Жеки. Шаблон микс и модификаторы (_) pattern*/
 
 /*.swiper-wrapper {Для компа биб
   height: auto;
@@ -275,7 +293,7 @@ button {
 }
 
 /*Крест выключатель модального окна*/
-.modal-close {
+.modal-close, .js-modal-close {
   position: absolute;
   outline: none; 
   border: 1px solid transparent; 
@@ -289,16 +307,16 @@ button {
   cursor: pointer;  
 }
 
-.modal-close:focus {  
+.modal-close:focus, .js-modal-close:focus {  
   border: 1px solid var(--color-lueViolet);
 }
 
-.modal-close:hover {
+.modal-close:hover, .js-modal-close:hover {
   color: var(--color-white);
   background-color: var(--color-lueViolet);
 }
 
-.modal-close:active {
+.modal-close:active, .js-modal-close:active {
   opacity: .7;
 }
 /* // Крест выключатель модального окна*/
@@ -755,8 +773,8 @@ button {
 }
 
 .header__bottom-title {
-  margin-bottom: 49px;
-  padding-top: 103px;
+  margin-bottom: 47px;
+  padding-top: 105px;
   width: 567px;
   font-size: 56px;
   line-height: 57px;
@@ -811,18 +829,6 @@ button {
   background: url("../img/stylizeCircles.png") no-repeat;
 }
 
-.whoweare__subtitle {
-  background: url("../img/overlineMark-white.png") top left / 26px no-repeat;
-}
-
-.whoweare__title {
-  position: relative;
-  margin: 0 0 36px 0;
-  max-width: 583px;
-  color: var(--color-white);
-  z-index: 1;/*Для ширины 1024px*/
-}
-
 .whoweare__text {
   position: relative;
   margin: 0 0 59px 0;
@@ -863,107 +869,109 @@ button {
 }
 /*** // Фото whoweare-1440px***/
 
-/*** О нас about-1440px***/
-.about {
-  padding: 55px 0 121px;
+/*** О нас promise-1440px***/
+.promise {
+  padding: 55px 0 72px;
 }
 
-.about__top {
-  padding-bottom: 73px;
+.promise__pattern {
+  margin-bottom: 68px;
 }
 
-.about__top-subtitle {
-  margin-bottom: 26px;
-}
-
-.about__top-h3 {
-  margin: 0 0 68px;
-}
-
-.about__top-list {
+.promise__list {
   padding: 0;
 }
 
-.about__top-item:not(:last-child) {
+.promise__item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.about__top-block {
+.promise__block {
   display: grid;
   grid-template-columns: 67px 1fr;
   grid-gap: 20px;
 }
 
-.about__top-img {
+.promise__img {
   width: 66px;
   height: 67px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.about__top-h4 {
+.promise__h4 {
   margin: 5px 0 20px;
 }
+/*** // О нас promise-1440px***/
 
-.about__center {
+
+/*** Связь connection-1440px***/
+.connection {
   padding: 24px 0 170px;
   max-width: 100%;
   background: url("../img/dog-Image.jpg") center / cover no-repeat;
   background-color: var(--color-java);
 }
 
-.about__center-naLeft {
+.connection__naLeft {
   margin-left: auto;
   width: 411px;
 }
 
-/*Обращение всем(*) кроме последнего объекта в блоке .about__center-container*/
-.about__center-naLeft *:not(:last-child) {
+/*Обращение всем(*) кроме последнего объекта в блоке .connection__container*/
+.connection__naLeft *:not(:last-child) {
   margin-bottom: 46px;  
 }
 
-.about__center-title {
+.connection__title {
   color: var(--color-white);
 }
 
 /*Первый в блоке, даже если выше него будут другие теги*/
-.about__center-title:first-of-type {
+.connection__title:first-of-type {
   padding-top: 51px;
 }
 
-.about__center-link {
+.connection__link {
   padding: 16px 32px;
   box-shadow: 0px 16px 24px rgba(38, 38, 38, 0.20);
 }
+/*** // Связь connection-1440px***/
 
 
-.about__bottom {
+/*** О нас services-1440px***/
+.services {
   position: relative;
-  padding: 107px 0 0;
+  padding: 107px 0 121px;
 }
 
-.about__bottom::before {
+.services::before {
   content: '';
   position: absolute;
-  top: -575px;
+  top: -657px;
   right: 0;
-  width: 721px;
+  width: 623px;
   height: 130%;
   background: url("../img/icons-figure/figure-01.png") right / contain no-repeat;
   z-index: -1;
 }
 
-.about__bottom-list {
-  margin-bottom: 45px;
-  padding: 0 0 0 12px;
+.services__pattern {
+  margin-bottom: 77px;
 }
 
-.about__bottom-item {
+.services__list {
+  margin: 0;
+  padding: 0;
+}
+
+.services__item {
   margin-right: 20px;  
   margin-bottom: 25px;
-  padding: 50px 49px 34px;
+  padding: 50px 48px 34px;
   border-radius: 20px;
-  width: 31.7%;
+  /* width: 31.7%; */
+  width: 32%;
   background-color: var(--color-white);  
   z-index: 5;/*Для картинки png*/ 
   -webkit-transition: box-shadow .4s ease-in-out; 
@@ -973,16 +981,16 @@ button {
   transition: box-shadow .4s ease-in-out; 
 }
 
-.about__bottom-item:nth-child(3n) {
+.services__item:nth-child(3n) {
   margin-right: 0;
 }
 
-.about__bottom-item:hover, .about__bottom-item--active {
+.services__item:hover, .services__item--active {
   box-shadow: 0 8px 16px 0 rgba(38, 38, 38, 0.2);
 }
 
 /*Ещё(Смотреть больше товаров) button-1920px*/
-.about__bottom-item_js {
+.services__item_js {
   -webkit-transition: opacity 0.2s linear, transform 0.2s ease-in-out;
   -ms-transition: opacity 0.2s linear, transform 0.2s ease-in-out;
   -moz-transition: opacity 0.2s linear, transform 0.2s ease-in-out;
@@ -990,59 +998,54 @@ button {
   transition: opacity 0.2s linear, transform 0.2s ease-in-out;
 }
 
-.about__bottom-item:nth-child(n+9) {
+.services__item:nth-child(n+9) {
   display: none;
 }
 
-.about__bottom-item:nth-child(-n+6) {
+.services__item:nth-child(-n+6) {
   display: inline-flex;
 }
 /* // Ещё(Смотреть больше товаров) button-1440px*/
 
-.about__bottom-h3 {
-  margin-top: 26px;
-  margin-bottom: 78px;
-}
-
-.about__bottom-img {
+.services__img {
   margin: 0 auto;
   width: 66px;
   height: 67px;
 }
 
-.about__bottom-h4 {
+.services__h4 {
   margin-top: 29px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.about__bottom-desc {
+.services__desc {
   text-align: center;
 }
 
-.about__bottom-btn {
-  margin: 0 auto;
+.services__btn {
+  margin: 45px auto 0;
   padding: 17px 22px;
 }
 
-.about__bottom-btn:focus {
+.services__btn:focus {
   outline: 1px solid var(--color-lueViolet);
 }
 
-.about__bottom-btn:hover {
+.services__btn:hover {
   background-color: #d52828;
 }
 
-.about__bottom-btn:active {
+.services__btn:active {
   background-color: #d00c0c;
 }
-/*** // О нас about-1440px***/
+/*** // О нас services-1440px***/
 
 
 /*** Форма регистрация recording-1440px***/
 .recording {
   position: relative;
-  padding: 130px 0 209px;
+  padding: 131px 0 207px;
   background: url("../img/recording-img.jpg") center / cover no-repeat;
   background-color: var(--color-lueViolet);
 }
@@ -1080,8 +1083,8 @@ button {
   display: grid;
   grid-template-columns: repeat(2, 225px);
   grid-template-rows: repeat(2, 1fr);
-  gap: 19px 22px;
-  margin-bottom: 20px;
+  gap: 20px 21px;
+  margin-bottom: 19px;
 }
 
 /*Для формы отправки*/
@@ -1282,25 +1285,18 @@ button {
 .gallery__container {
   position: relative;
   margin: 0 auto;
-  margin-top: -79px;
-  padding: 92px 87px 56px 86px;
+  margin-top: -77px;
+  padding: 93px 87px 56px 86px;
   border-radius: 40px;
   border: 1px solid transparent;
   max-width: 1020px;  
   height: max-content;
-  color: var(--color-white);
+  /* color: var(--color-white); */
   background-color: var(--color-lueViolet);
 }
 
-.gallery__subtitle {
-  margin: 0 0 28px 0;
-  background: url("../img/overlineMark-white.png") top left / 26px no-repeat;
-}
-
-.gallery__title {
-  margin: 0 0 57px 0;
-  max-width: 583px;
-  color: var(--color-white);
+.gallery__pattern {
+  margin-bottom: 59px;
 }
 
 .gallery__list {
@@ -1449,6 +1445,7 @@ button {
   margin-bottom: -120px;
   border-radius: 40px;
   box-shadow: 0px 16px 24px 0px rgba(38, 38, 38, 0.20), 0px 8px 16px 0px rgba(38, 38, 38, 0.24);
+  width: 100%;
   height: 480px;
   background-color: var(--color-alto);
 }
@@ -1493,80 +1490,73 @@ button {
 }
 /*** // Картинка и ТАБ gallery-1440px***/
 
-/*** Отзывы клиентов feedback-1440px***/
-.feedback {
+/*** Отзывы клиентов customers-1440px***/
+.customers {
   position: relative;
-  padding: 90px 0 211px;
+  padding: 88px 0 210px;
 }
 
-.feedback::before {
+.customers::before {
   content: '';
   position: absolute;
-  left: -265px;
+  left: -266px;
   bottom: 18px;
-  width: 1199px;
+  width: 1202px;
   height: 1541px;
   background: url("../img/icons-figure/figure-02.png") bottom / contain no-repeat;
   z-index: -1;
   transform: rotate(360deg);
 }
 
-.feedback__container {
+.customers__container {
   display: grid;
   grid-template-columns: 290px 1fr;
   gap: 57px;
 }
 
-.feedback__subtitle {
-  margin-bottom: 27px;
-}
-
-.feedback__title {
-  margin-top: 0;
-}
-
-.feedback__list {
+.customers__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 23px;
-  margin: 0;
+  margin: 5px 0 0;
   padding: 0;
 }
 
-.feedback__item {
+.customers__item {
   position: relative;
-  padding: 32px 47px 112px 46px;
+  padding: 28px 47px 112px 46px;
+  border-radius: 20px;
   background-color: var(--color-white);
 }
 
-.feedback__info {
+.customers__info {
   position: absolute;
   bottom: 39px;
   display: inline-flex;
   align-items: center;
 }
 
-.feedback__info img {
+.customers__info img {
   margin-right: 15px;
 }
-/*** // Клиенты feedback-1440px***/
+/*** // Клиенты customers-1440px***/
 
-/*** Услуги services-1440px***/
-.services {
+/*** Услуги impacts-1440px***/
+.impacts {
   position: relative;
-  padding: 101px 0 196px;
+  padding: 105px 0 196px;
   background-color: var(--color-jungleGreen);
   z-index: 1;
 }
 
-.services__container {
+.impacts__container {
   position: relative;
 }
 
-.services__container::before {
+.impacts__container::before {
   content: '';
   position: absolute;
-  top: -101px;
+  top: -105px;
   right: -257px;
   width: 100%;
   height: 105%;
@@ -1574,61 +1564,60 @@ button {
   z-index: -1;
 }
 
-.services__top {
+.impacts__top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
-.services__subtitle {
-  color: var(--color-white);
-  background: url("../img/overlineMark-white.png") top left / 26px no-repeat;
+.impacts__pattern {
+  max-width: 485px;
 }
 
-.services__title {
+.impacts__title {
   margin-top: 0;
   width: 410px;
   color: var(--color-white);
 }
 
-.services__img {
-  margin-top: -181px;
+.impacts__img {
+  margin-top: -186px;
   border-radius: 40px;
   width: 498px;
   height: 315px;
-  background: url("../img/services-dog.jpg") center / cover no-repeat;
+  background: url("../img/impact-dog.jpg") center / cover no-repeat;
 }
 
-.services__list {
+.impacts__list {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   gap: 6px;
   padding: 0;
 }
 
-.services__item {
+.impacts__item {
   display: flex;
 }
 
-.services__image {
+.impacts__image {
   margin-right: 11px;
 }
 
-.services__block {
+.impacts__block {
   padding-top: 4px;
 }
 
-.services__title-icon {
+.impacts__title-icon {
   margin: 0;
   margin-bottom: 3px;
   color: var(--color-white);
 }
 
-.services__desc {
+.impacts__desc {
   margin: 0;
   max-width: 127px;
 }
-/*** // Услуги services-1440px***/
+/*** // Услуги impacts-1440px***/
 
 /*** Кнопка встречи conventus-1440px***/
 .conventus {
@@ -1645,7 +1634,7 @@ button {
   background-color: var(--color-lueViolet);
 }
 
-.conventus__block-conventus {
+.conventus__block {
   display: flex;
   justify-content: space-between;
 }
@@ -1706,7 +1695,7 @@ button {
 }
 
 .footer__desc {
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   font-size: 14px;
   line-height: 23px;
   color: var(--color-tundora);
@@ -1768,8 +1757,8 @@ button {
 }
 
 .footer__center-desc {
-  margin-top: 14.5px;
-  margin-bottom: 28px;
+  margin-top: 13.5px;
+  margin-bottom: 27px;
   color: var(--color-tundora);
 }
 
@@ -1939,6 +1928,12 @@ button {
 .footer__modal-close {
   top: 20px;
   right: 20px;
+
+  /* position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 15px;
+  height: 15px; */
 }
 
 .footer__modal-close:focus {
@@ -1960,6 +1955,8 @@ button {
 .footer__map {
   width: 100%; 
   height: 400px;
+  /*Чтобы карта не выходила за пределы блока*/
+  overflow: hidden;
 }
 
 .footer__modal-title_weight {
@@ -2028,7 +2025,7 @@ button {
     padding: 40px 0 90px;
   }
   
-  .about__top-list {
+  .promise__list {
     margin: 0;
   }
 
@@ -2036,20 +2033,20 @@ button {
     padding-top: 60px;
   }
   
-  .about__bottom-list {
+  .services__list {
     padding: 0;
   }
 
-  .about__bottom-item {
+  .services__item {
     margin-right: 20px;
     width: 46%;
   }  
 
-  .about__bottom-item:nth-child(2n) {
+  .services__item:nth-child(2n) {
     margin-right: 0;
   }
 
-  .about__bottom-item:nth-child(3n) {
+  .services__item:nth-child(3n) {
     margin-right: 20px;
   }
 
@@ -2066,7 +2063,7 @@ button {
   /* // Картинка в zoom-e 1280px*/
 
 
-  .services__container::before {
+  .impacts__container::before {
     right: -20%;
     width: 95%;
     height: 95%;
@@ -2372,47 +2369,47 @@ button {
   /* // Картинка в zoom-e 1024px*/
 
 
-  .feedback {
+  .customers {
     padding: 80px 0;
   }
 
-  .feedback::before {
+  .customers::before {
     left: -230px;
     bottom: 0;
     width: 1000px;
     height: 1300px;
   }
 
-  .feedback__container {
+  .customers__container {
     grid-template-columns: 1fr;
     gap: 15px;
   }
 
 
-  .services {
+  .impacts {
     padding: 70px 0;
   }
 
-  .services__container::before {
+  .impacts__container::before {
     display: none;
   }
 
-  .services__top {
+  .impacts__top {
     margin-bottom: 20px;
   }
 
-  .services__img {
+  .impacts__img {
     margin-top: -111px;
     width: 383px;
     height: 280px;
   }
 
-  .services__title-icon {
+  .impacts__title-icon {
     font-size: 26px;
     line-height: 32px;
   }
 
-  .services__desc {
+  .impacts__desc {
     max-width: 100%;
     font-size: 14px;
   }
@@ -2423,7 +2420,7 @@ button {
     padding: 20px 0;
   }
 
-  .conventus__block-conventus {
+  .conventus__block {
     padding: 35px;
   }
   
@@ -2494,40 +2491,40 @@ button {
   }  
 
 
-  .feedback {
+  .customers {
     padding: 50px 0;
   }
 
-  .feedback__list {
+  .customers__list {
     grid-template-columns: repeat(1, 380px);
     gap: 20px;
     margin: 0 auto;
   }
 
 
-  .services {
+  .impacts {
     padding: 50px 0;
   }
 
-  .services__top {
+  .impacts__top {
     margin-bottom: 20px;
   }
 
-  .services__block {
+  .impacts__block {
     margin-top: -6px;
     padding-top: 0;
   }
 
-  .services__title {
+  .impacts__title {
     width: 100%;
   }
   
-  .services__list {
+  .impacts__list {
     grid-template-columns: repeat(2, 50%);
     gap: 30px 20px;
   }
 
-  .services__img {
+  .impacts__img {
     display: none;
   }
 
@@ -2537,7 +2534,7 @@ button {
     padding: 0 0 31px;
   }
 
-  .conventus__block-conventus {
+  .conventus__block {
     display: block;
     padding: 25px;
   }
@@ -2628,9 +2625,26 @@ button {
     left: 7px;
     font-size: 12px;
   }
+
+  .pattern {
+    margin-bottom: 0;
+  }
+
+  .pattern__subtitle {
+    margin: 0 0 17px 0;
+    padding: 0 0 0 30px;
+    letter-spacing: 2px;
+  }  
+
+  .pattern__title {
+    margin-bottom: 26px;
+  }  
   
 
   /*** Шапка header-696px***/
+  .header {
+    background-position: 76% center;
+  }
   .header__container {
     align-items: start;
     flex-direction: column;
@@ -2649,7 +2663,8 @@ button {
   }
 
   .header__center-clonList_none1280 {
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
     margin-top: 39px;
   }
   /*** // Шапка header-696px***/
@@ -2678,25 +2693,51 @@ button {
     height: 200px;
   }
 
-  .about {
-    padding: 50px 0 60px;
+  .promise {
+    padding-bottom: 32px;
   }
 
-  .about__top-list .col-sm-6 {
+  .connection {
+    padding: 132px 0 30px;
+    background-image: url("../img/dog-Image-1024px.jpg");
+    background-position: 115%;
+  }
+
+  .connection__naLeft {
+    width: 240px;
+  }
+
+  .connection__naLeft *:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .promise__list .col-sm-6 {
     width: 100%;
   }
 
-  .about__bottom-list {
+  .services {
+    padding: 70px 0;
+  }
+
+  .services__pattern {
+    margin-bottom: 40px;
+  }
+
+  .services__list {
     margin-bottom: 15px;
   }
 
-  .about__bottom-item, .about__bottom-item:nth-child(3n) {
+  .services__item, .services__item:nth-child(3n) {
     margin-right: 0;
     width: 100%;
   }
 
+  .services__btn {
+    margin-top: 25px;
+  }
+
   .recording {
-    padding: 100px 0 40px;
+    padding: 80px 0 40px;
   }  
 
   .recording__left {
@@ -2757,13 +2798,8 @@ button {
     border-radius: 0;
   }
 
-  .gallery__subtitle {
-    margin-bottom: 18px;
-  }
-
-  .gallery__title {
-    margin-bottom: 30px;
-    max-width: 100%;
+  .gallery__pattern {
+    margin-bottom: 40px;
   }
 
   .gallery__list {
@@ -2844,7 +2880,7 @@ button {
     width: 100%;
   }
 
-  .conventus__block-conventus {
+  .conventus__block {
     display: block;
     padding: 25px 0;
   }
@@ -2870,9 +2906,14 @@ button {
     height: 100px;
   }
   
-  .about__center-naLeft {
+  .connection__naLeft {
     width: 100%;
   }  
+
+  .connection {
+    padding: 106px 0 31px;
+    background-position: center;
+  }
 
 
   .recording__left {
@@ -2930,11 +2971,11 @@ button {
   }
 
 
-  .feedback {
+  .customers {
     padding: 35px 0 50px 0;
   }
 
-  .feedback::before {
+  .customers::before {
     left: -30px;
     bottom: 0;
     width: 100%;
@@ -2942,32 +2983,24 @@ button {
     transform: rotate(0deg);
   }
 
-  .feedback__title {
+  .customers__title {
     margin-bottom: 10px;
   }
 
-  .feedback__list {
+  .customers__list {
     grid-template-columns: repeat(1, 1fr);
   }
 
 
-  .services {
+  .impacts {
     padding: 30px 0;
   }
 
-  .services__subtitle {
-    margin-bottom: 20px;
-  }
-
-  .services__title {
-    margin-bottom: 20px;
-  }
-
-  .services__list {
+  .impacts__list {
     gap: 25px 5px;
   }
 
-  .services__image img {
+  .impacts__image img {
     width: 40px;
     height: 40px;
   }
@@ -3014,6 +3047,6 @@ button {
   }
 }
 
-/**/
+
 
 

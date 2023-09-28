@@ -91,11 +91,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  //about__bottom-btn_moreJs-Смотреть больше товаров//
+  //services__btn_moreJs-Смотреть больше товаров//
   windowWidth = document.documentElement.clientWidth;
-  const moreBtn = document.querySelector(".about__bottom-btn_moreJs"),
-    ratingList = document.querySelector(".about__bottom-list_js");
-  const divanBtn = document.querySelector(".about__bottom-btn") // Для обёртки if
+  const moreBtn = document.querySelector(".services__btn_moreJs"),
+    ratingList = document.querySelector(".services__list_js");
+  const divanBtn = document.querySelector(".services__btn") // Для обёртки if
   if (divanBtn) { // Обёртка if. Спасение Gulp-а от null в браузере
     let immediatelyShownCount;
     immediatelyShownCount = windowWidth >= 1350 ? 6 : 6;
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let e;
       const t = document.documentElement.clientWidth;
       e = t >= 1350 || t <= 1021 ? 4 : 3;
-      const r = ratingList.querySelectorAll(".about__bottom-item_js");
+      const r = ratingList.querySelectorAll(".services__item_js");
       let s = 100;
       r.forEach(e => {
           "none" === window.getComputedStyle(e).display && (e.style.display = "inline-flex",
