@@ -1585,8 +1585,7 @@ button {
   border-radius: 40px;
   width: 498px;
   height: 315px;
-  background: url("../img/impact-dog.jpg") center / cover no-repeat;
-}
+} 
 
 .impacts__list {
   display: grid;
