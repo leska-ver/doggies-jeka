@@ -25,7 +25,7 @@
     <h1 class="visually-hidden">Я для семантики</h1>
     <header class="header">
       <div class="header__top">
-        <div class="container header__container">
+        <div class="header__container _container">
           <a class="header__top-logo" href="#">
             <img class="header__top-logo-img" src="img/logo.svg" alt="Логотип logoipsum">
           </a>
@@ -55,13 +55,13 @@
               </div>
             </li>
           </ul>
-          <a class="header__top-link btn" href="#">
+          <a class="header__top-link btn" href="#recording">
             Make an Appointment
           </a>
         </div>
       </div>
       <div class="header__center">
-        <div class="container header__container">
+        <div class="header__container _container">
           <div class="header__center-content">
             <!-- полоса поиск -->
             <button id="burger" class="burger" aria-label="Меню">
@@ -205,9 +205,9 @@
         </div>
       </div>
       <div class="header__bottom">
-        <div class="container">
+        <div class="_container">
           <h2 class="header__bottom-title h2">Premier dog boarding, daycare & day spa</h2>
-          <a class="header__bottom-button btn" href="#">
+          <a class="header__bottom-button btn" href="#recording__container">
             Make an Appointment
           </a>
         </div>
@@ -215,7 +215,7 @@
     </header>
     <main>
       <section class="whoweare">
-        <div class="container whoweare__container">
+        <div class="whoweare__container _container">
           <!-- Лайфхак от Жеки. Шаблон микс и модификаторы (_) pattern -->
           <div class="whoweare__pattern pattern">
             <div class="pattern__subtitle pattern__subtitle_white">
@@ -235,7 +235,7 @@
         </div>
       </section>
       <section class="promise">
-        <div class="container promise__container">
+        <div class="promise__container _container">
           <!-- Лайфхак от Жеки. Шаблон микс и модификаторы (_) pattern -->
           <div class="promise__pattern pattern">
             <div class="pattern__subtitle">
@@ -291,18 +291,18 @@
         </div>
       </section>  
       <section class="connection">  
-        <div class="container connection__container">
+        <div class="connection__container _container">
           <!-- Блок на лево -->
           <div class="connection__naLeft">
             <h3 class="connection__title h3">Nemo enim ipsam voluptatem quia voluptas in proident</h3>
-            <a class="connection__link btn" href="#">
+            <a class="connection__link btn" href="#recording__left">
               Make an Appointment
             </a>
           </div>
         </div>
       </section>  
       <section class="services">
-        <div class="container services__container">
+        <div class="services__container _container">
           <!-- Лайфхак от Жеки. Шаблон микс и модификаторы (_) pattern -->
           <div class="services__pattern pattern">
             <div class="pattern__subtitle">
@@ -447,11 +447,11 @@
           </button>
         </div>
       </section>
-      <section class="recording">
-        <div class="container recording__container">
-          <div class="recording__left">
-            <h3 class="recording__h3 h3">Make an appointment</h3>
-            <div class="recording__form">
+      <section class="recording" id="recording">
+        <div class="recording__container _container" id="recording__container">
+          <div class="recording__left" id="recording__left">
+            <h3 class="recording__h3 h3" id="recording__id">Make an appointment</h3>
+            <div class="recording__form" id="recording__block-form">
               <form class="recording__form recording__form_js" action="mail.php" enctype="multipart/form-data"
                 method="POST" aria-label="Здесь вы можете оставить свои данные и пожедание">
                 <input type="hidden" name="admin_email[]" value="darki@yandex.ru"><!--  -->
@@ -507,7 +507,7 @@
         </div>
       </section>
       <section class="gallery video-iframe">
-        <div class="container gallery__container">
+        <div class="gallery__container _container">
           <!-- Лайфхак от Жеки. Шаблон микс и модификаторы (_) pattern -->
           <div class="gallery__pattern pattern">
             <div class="pattern__subtitle pattern__subtitle_white">
@@ -563,7 +563,7 @@
         </div>
       </section>
       <section class="customers">
-        <div class="container customers__container">
+        <div class="customers__container _container">
           <div class="customers__left">
             <!-- Лайфхак от Жеки. Шаблон микс и модификаторы (_) pattern -->
           <div class="customers__pattern pattern">
@@ -597,7 +597,7 @@
         </div>
       </section>
       <section class="impacts"> 
-        <div class="container impacts__container">
+        <div class="impacts__container _container">
           <div class="impacts__top">
               <!-- Лайфхак от Жеки. Шаблон микс и модификаторы (_) pattern -->
               <div class="impacts__pattern pattern">
@@ -653,22 +653,22 @@
         </div>
       </section> 
       <section class="conventus">
-        <div class="container conventus__container">
+        <div class="conventus__container _container">
           <h2 class="visually-hidden">Я для семантики</h2>
           <div class="conventus__block">
             <p class="conventus__desc">
               Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <button class="conventus__button btn">
+            <a class="conventus__button btn" href="#recording__id">
               Make an Appointment           
-            </button>
+            </a>
           </div>
         </div>
       </section>  
     </main>
     <footer class="footer">
       <div class="footer__top">
-        <div class="container footer__container footer__container_grid">
+        <div class="footer__container footer__container_grid _container">
           <div class="footer__left">
             <a href="#" class="footer__logo" aria-label="Логотип logoipsum">
               <svg width="174" height="41" viewbox="0 0 174 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -846,7 +846,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <div class="container footer__container footer__container_bottom">
+        <div class="footer__container footer__container_bottom _container">
           <p class="footer__bottom-desc desc-p">
             Tagline lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
           </p>

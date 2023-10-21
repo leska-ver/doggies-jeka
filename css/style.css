@@ -176,7 +176,7 @@ button {
   overflow: hidden;
 }
 
-.container {
+._container {
   /*1120px = 1020px + 50px + 50px не менять!*/
   max-width: 1120px;
   margin: 0 auto;
@@ -1587,6 +1587,10 @@ button {
   height: 315px;
 } 
 
+.impacts__img img {
+  border-radius: 44px;
+}
+
 .impacts__list {
   display: grid;
   grid-template-columns: repeat(4, 25%);
@@ -2075,7 +2079,7 @@ button {
 }
 
 @media (max-width: 1024px) {
-  .container {
+  ._container {
     padding: 0 40px;
   }
 
@@ -2603,7 +2607,7 @@ button {
 }
 
 @media (max-width: 696px) {
-  .container {
+  ._container {
     padding: 0 30px;
   }
 
@@ -2887,7 +2891,7 @@ button {
 
 
 @media (max-width: 484px) {
-  .container {
+  ._container {
     padding: 0 15px;
   }
 
