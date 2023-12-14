@@ -1693,8 +1693,7 @@ button {
 }
 
 .footer__logo:focus {
-  outline: 2px solid var(--color-lueViolet);
-  outline-offset: 8px;
+  opacity: .7;
 }
 
 .footer__desc {
